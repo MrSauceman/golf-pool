@@ -117,7 +117,7 @@ export async function syncFromEspn(
       let frontDone = true;
       let backDone = true;
       const gState = (st.type && st.type.state) || '';
-      if (p >= currentRound && gState !== 'post') {
+      if (p === (typeof st.period === 'number' ? st.period : currentRound) && gState !== 'post') {
         const thru = typeof st.thru === 'number' ? st.thru : 0;
         const startHole = typeof st.startHole === 'number' ? st.startHole : 1;
         const outHoles = startHole >= 10 ? Math.max(0, thru - 9) : Math.min(thru, 9);
