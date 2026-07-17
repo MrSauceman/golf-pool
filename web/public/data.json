@@ -1,0 +1,6355 @@
+{
+  "meta": {
+    "event": "The Open Championship 2026",
+    "course": "Royal Birkdale",
+    "parFront": 34,
+    "parBack": 36,
+    "par": 70,
+    "salaryCap": 50,
+    "entries": 127,
+    "owners": 75,
+    "pot": 2540,
+    "entryFee": 20,
+    "currentRound": 1,
+    "cutApplied": false,
+    "lockedRounds": [
+      1
+    ],
+    "importedAt": "2026-07-17T03:08:41.800Z",
+    "lastSync": null
+  },
+  "golfers": {
+    "scottie-scheffler": {
+      "id": "scottie-scheffler",
+      "name": "Scottie Scheffler",
+      "salary": 13.3,
+      "scores": {
+        "1": {
+          "f9": -3,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 18,
+      "ownedPct": 0.14173228346456693
+    },
+    "rory-mcilroy": {
+      "id": "rory-mcilroy",
+      "name": "Rory McIlroy",
+      "salary": 11.9,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 40,
+      "ownedPct": 0.31496062992125984
+    },
+    "tommy-fleetwood": {
+      "id": "tommy-fleetwood",
+      "name": "Tommy Fleetwood",
+      "salary": 10.5,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 37,
+      "ownedPct": 0.29133858267716534
+    },
+    "matt-fitzpatrick": {
+      "id": "matt-fitzpatrick",
+      "name": "Matt Fitzpatrick",
+      "salary": 10,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 46,
+      "ownedPct": 0.36220472440944884
+    },
+    "xander-schauffele": {
+      "id": "xander-schauffele",
+      "name": "Xander Schauffele",
+      "salary": 9.8,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 19,
+      "ownedPct": 0.14960629921259844
+    },
+    "jon-rahm": {
+      "id": "jon-rahm",
+      "name": "Jon Rahm",
+      "salary": 9.7,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 22,
+      "ownedPct": 0.1732283464566929
+    },
+    "ludvig-aberg": {
+      "id": "ludvig-aberg",
+      "name": "Ludvig Aberg",
+      "salary": 9.3,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 20,
+      "ownedPct": 0.15748031496062992
+    },
+    "justin-rose": {
+      "id": "justin-rose",
+      "name": "Justin Rose",
+      "salary": 9.1,
+      "scores": {
+        "1": {
+          "f9": 3,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 29,
+      "ownedPct": 0.2283464566929134
+    },
+    "cameron-young": {
+      "id": "cameron-young",
+      "name": "Cameron Young",
+      "salary": 9,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": -2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 10,
+      "ownedPct": 0.07874015748031496
+    },
+    "tyrrell-hatton": {
+      "id": "tyrrell-hatton",
+      "name": "Tyrrell Hatton",
+      "salary": 8.9,
+      "scores": {
+        "1": {
+          "f9": -2,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 24,
+      "ownedPct": 0.1889763779527559
+    },
+    "collin-morikawa": {
+      "id": "collin-morikawa",
+      "name": "Collin Morikawa",
+      "salary": 8.7,
+      "scores": {
+        "1": {
+          "f9": -3,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 26,
+      "ownedPct": 0.2047244094488189
+    },
+    "chris-gotterup": {
+      "id": "chris-gotterup",
+      "name": "Chris Gotterup",
+      "salary": 8.5,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 28,
+      "ownedPct": 0.2204724409448819
+    },
+    "bryson-dechambeau": {
+      "id": "bryson-dechambeau",
+      "name": "Bryson DeChambeau",
+      "salary": 8.4,
+      "scores": {
+        "1": {
+          "f9": -2,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 5,
+      "ownedPct": 0.03937007874015748
+    },
+    "viktor-hovland": {
+      "id": "viktor-hovland",
+      "name": "Viktor Hovland",
+      "salary": 8.3,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 28,
+      "ownedPct": 0.2204724409448819
+    },
+    "wyndham-clark": {
+      "id": "wyndham-clark",
+      "name": "Wyndham Clark",
+      "salary": 8.2,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 24,
+      "ownedPct": 0.1889763779527559
+    },
+    "robert-macintyre": {
+      "id": "robert-macintyre",
+      "name": "Robert MacIntyre",
+      "salary": 8,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": -2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 32,
+      "ownedPct": 0.25196850393700787
+    },
+    "shane-lowry": {
+      "id": "shane-lowry",
+      "name": "Shane Lowry",
+      "salary": 7.9,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 18,
+      "ownedPct": 0.14173228346456693
+    },
+    "sam-burns": {
+      "id": "sam-burns",
+      "name": "Sam Burns",
+      "salary": 7.8,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": 3,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 19,
+      "ownedPct": 0.14960629921259844
+    },
+    "russell-henley": {
+      "id": "russell-henley",
+      "name": "Russell Henley",
+      "salary": 7.7,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 20,
+      "ownedPct": 0.15748031496062992
+    },
+    "brooks-koepka": {
+      "id": "brooks-koepka",
+      "name": "Brooks Koepka",
+      "salary": 7.6,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 6,
+      "ownedPct": 0.047244094488188976
+    },
+    "justin-thomas": {
+      "id": "justin-thomas",
+      "name": "Justin Thomas",
+      "salary": 7.5,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 10,
+      "ownedPct": 0.07874015748031496
+    },
+    "alex-fitzpatrick": {
+      "id": "alex-fitzpatrick",
+      "name": "Alex Fitzpatrick",
+      "salary": 7.4,
+      "scores": {
+        "1": {
+          "f9": -2,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 12,
+      "ownedPct": 0.09448818897637795
+    },
+    "joaquin-niemann": {
+      "id": "joaquin-niemann",
+      "name": "Joaquin Niemann",
+      "salary": 7.3,
+      "scores": {
+        "1": {
+          "f9": 4,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 8,
+      "ownedPct": 0.06299212598425197
+    },
+    "jordan-spieth": {
+      "id": "jordan-spieth",
+      "name": "Jordan Spieth",
+      "salary": 7.2,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 16,
+      "ownedPct": 0.12598425196850394
+    },
+    "aaron-rai": {
+      "id": "aaron-rai",
+      "name": "Aaron Rai",
+      "salary": 7.1,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 10,
+      "ownedPct": 0.07874015748031496
+    },
+    "patrick-cantlay": {
+      "id": "patrick-cantlay",
+      "name": "Patrick Cantlay",
+      "salary": 7,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 5,
+      "ownedPct": 0.03937007874015748
+    },
+    "patrick-reed": {
+      "id": "patrick-reed",
+      "name": "Patrick Reed",
+      "salary": 7,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 12,
+      "ownedPct": 0.09448818897637795
+    },
+    "hideki-matsuyama": {
+      "id": "hideki-matsuyama",
+      "name": "Hideki Matsuyama",
+      "salary": 6.9,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 7,
+      "ownedPct": 0.05511811023622047
+    },
+    "si-woo-kim": {
+      "id": "si-woo-kim",
+      "name": "Si Woo Kim",
+      "salary": 6.9,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 10,
+      "ownedPct": 0.07874015748031496
+    },
+    "min-woo-lee": {
+      "id": "min-woo-lee",
+      "name": "Min Woo Lee",
+      "salary": 6.9,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 11,
+      "ownedPct": 0.08661417322834646
+    },
+    "tom-kim": {
+      "id": "tom-kim",
+      "name": "Tom Kim",
+      "salary": 6.8,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 30,
+      "ownedPct": 0.23622047244094488
+    },
+    "ben-griffin": {
+      "id": "ben-griffin",
+      "name": "Ben Griffin",
+      "salary": 6.8,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 7,
+      "ownedPct": 0.05511811023622047
+    },
+    "cameron-smith": {
+      "id": "cameron-smith",
+      "name": "Cameron Smith",
+      "salary": 6.8,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 4,
+      "ownedPct": 0.031496062992125984
+    },
+    "corey-conners": {
+      "id": "corey-conners",
+      "name": "Corey Conners",
+      "salary": 6.8,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 6,
+      "ownedPct": 0.047244094488188976
+    },
+    "maverick-mcnealy": {
+      "id": "maverick-mcnealy",
+      "name": "Maverick McNealy",
+      "salary": 6.7,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 5,
+      "ownedPct": 0.03937007874015748
+    },
+    "marco-penge": {
+      "id": "marco-penge",
+      "name": "Marco Penge",
+      "salary": 6.7,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "j-j-spaun": {
+      "id": "j-j-spaun",
+      "name": "J.J. Spaun",
+      "salary": 6.7,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 8,
+      "ownedPct": 0.06299212598425197
+    },
+    "harris-english": {
+      "id": "harris-english",
+      "name": "Harris English",
+      "salary": 6.7,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 2,
+      "ownedPct": 0.015748031496062992
+    },
+    "jake-knapp": {
+      "id": "jake-knapp",
+      "name": "Jake Knapp",
+      "salary": 6.7,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "eugenio-lopez-chacarra": {
+      "id": "eugenio-lopez-chacarra",
+      "name": "Eugenio Lopez-Chacarra",
+      "salary": 6.7,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "brian-harman": {
+      "id": "brian-harman",
+      "name": "Brian Harman",
+      "salary": 6.6,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 3,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 5,
+      "ownedPct": 0.03937007874015748
+    },
+    "nicolai-hojgaard": {
+      "id": "nicolai-hojgaard",
+      "name": "Nicolai Hojgaard",
+      "salary": 6.6,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 10,
+      "ownedPct": 0.07874015748031496
+    },
+    "akshay-bhatia": {
+      "id": "akshay-bhatia",
+      "name": "Akshay Bhatia",
+      "salary": 6.6,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 7,
+      "ownedPct": 0.05511811023622047
+    },
+    "sepp-straka": {
+      "id": "sepp-straka",
+      "name": "Sepp Straka",
+      "salary": 6.6,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": -3,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "kurt-kitayama": {
+      "id": "kurt-kitayama",
+      "name": "Kurt Kitayama",
+      "salary": 6.5,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": -2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 3,
+      "ownedPct": 0.023622047244094488
+    },
+    "kristoffer-reitan": {
+      "id": "kristoffer-reitan",
+      "name": "Kristoffer Reitan",
+      "salary": 6.5,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 2,
+      "ownedPct": 0.015748031496062992
+    },
+    "rickie-fowler": {
+      "id": "rickie-fowler",
+      "name": "Rickie Fowler",
+      "salary": 6.5,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 2,
+      "ownedPct": 0.015748031496062992
+    },
+    "adam-scott": {
+      "id": "adam-scott",
+      "name": "Adam Scott",
+      "salary": 6.5,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 5,
+      "ownedPct": 0.03937007874015748
+    },
+    "david-puig": {
+      "id": "david-puig",
+      "name": "David Puig",
+      "salary": 6.5,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 3,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "keegan-bradley": {
+      "id": "keegan-bradley",
+      "name": "Keegan Bradley",
+      "salary": 6.5,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "jacob-bridgeman": {
+      "id": "jacob-bridgeman",
+      "name": "Jacob Bridgeman",
+      "salary": 6.4,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "max-homa": {
+      "id": "max-homa",
+      "name": "Max Homa",
+      "salary": 6.4,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 5,
+      "ownedPct": 0.03937007874015748
+    },
+    "alex-noren": {
+      "id": "alex-noren",
+      "name": "Alex Noren",
+      "salary": 6.4,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 3,
+      "ownedPct": 0.023622047244094488
+    },
+    "jason-day": {
+      "id": "jason-day",
+      "name": "Jason Day",
+      "salary": 6.4,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "ryan-gerard": {
+      "id": "ryan-gerard",
+      "name": "Ryan Gerard",
+      "salary": 6.4,
+      "scores": {
+        "1": {
+          "f9": -4,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 2,
+      "ownedPct": 0.015748031496062992
+    },
+    "victor-perez": {
+      "id": "victor-perez",
+      "name": "Victor Perez",
+      "salary": 6.4,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": -3,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "ryan-fox": {
+      "id": "ryan-fox",
+      "name": "Ryan Fox",
+      "salary": 6.3,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 4,
+      "ownedPct": 0.031496062992125984
+    },
+    "harry-hall": {
+      "id": "harry-hall",
+      "name": "Harry Hall",
+      "salary": 6.3,
+      "scores": {
+        "1": {
+          "f9": 3,
+          "b9": 4,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "rasmus-hojgaard": {
+      "id": "rasmus-hojgaard",
+      "name": "Rasmus Hojgaard",
+      "salary": 6.3,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 4,
+      "ownedPct": 0.031496062992125984
+    },
+    "gary-woodland": {
+      "id": "gary-woodland",
+      "name": "Gary Woodland",
+      "salary": 6.3,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 6,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "matt-wallace": {
+      "id": "matt-wallace",
+      "name": "Matt Wallace",
+      "salary": 6.3,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 2,
+      "ownedPct": 0.015748031496062992
+    },
+    "sungjae-im": {
+      "id": "sungjae-im",
+      "name": "Sungjae Im",
+      "salary": 6.2,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": -4,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 3,
+      "ownedPct": 0.023622047244094488
+    },
+    "jayden-trey-schaper": {
+      "id": "jayden-trey-schaper",
+      "name": "Jayden Trey Schaper",
+      "salary": 6.2,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "rasmus-neergaard-petersen": {
+      "id": "rasmus-neergaard-petersen",
+      "name": "Rasmus Neergaard-Petersen",
+      "salary": 6.2,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "angel-ayora-fanegas": {
+      "id": "angel-ayora-fanegas",
+      "name": "Angel Ayora Fanegas",
+      "salary": 6.2,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": 3,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "daniel-berger": {
+      "id": "daniel-berger",
+      "name": "Daniel Berger",
+      "salary": 6.2,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 5,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 4,
+      "ownedPct": 0.031496062992125984
+    },
+    "hao-tong-li": {
+      "id": "hao-tong-li",
+      "name": "Hao-Tong Li",
+      "salary": 6.2,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "sahith-theegala": {
+      "id": "sahith-theegala",
+      "name": "Sahith Theegala",
+      "salary": 6.2,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 3,
+      "ownedPct": 0.023622047244094488
+    },
+    "j-t-poston": {
+      "id": "j-t-poston",
+      "name": "J.T. Poston",
+      "salary": 6.1,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 3,
+      "ownedPct": 0.023622047244094488
+    },
+    "thomas-detry": {
+      "id": "thomas-detry",
+      "name": "Thomas Detry",
+      "salary": 6.1,
+      "scores": {
+        "1": {
+          "f9": -2,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "jordan-l-smith": {
+      "id": "jordan-l-smith",
+      "name": "Jordan L. Smith",
+      "salary": 6.1,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": -2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 4,
+      "ownedPct": 0.031496062992125984
+    },
+    "keith-mitchell": {
+      "id": "keith-mitchell",
+      "name": "Keith Mitchell",
+      "salary": 6.1,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "ryo-hisatsune": {
+      "id": "ryo-hisatsune",
+      "name": "Ryo Hisatsune",
+      "salary": 6.1,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": -2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "lucas-herbert": {
+      "id": "lucas-herbert",
+      "name": "Lucas Herbert",
+      "salary": 6.1,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": -2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "michael-thorbjornsen": {
+      "id": "michael-thorbjornsen",
+      "name": "Michael Thorbjornsen",
+      "salary": 6.1,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 2,
+      "ownedPct": 0.015748031496062992
+    },
+    "bud-cauley": {
+      "id": "bud-cauley",
+      "name": "Bud Cauley",
+      "salary": 6,
+      "scores": {
+        "1": {
+          "f9": -2,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "max-greyserman": {
+      "id": "max-greyserman",
+      "name": "Max Greyserman",
+      "salary": 6,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 4,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "tom-mckibbin": {
+      "id": "tom-mckibbin",
+      "name": "Tom McKibbin",
+      "salary": 6,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "casey-jarvis": {
+      "id": "casey-jarvis",
+      "name": "Casey Jarvis",
+      "salary": 6,
+      "scores": {
+        "1": {
+          "f9": 3,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 2,
+      "ownedPct": 0.015748031496062992
+    },
+    "eric-cole": {
+      "id": "eric-cole",
+      "name": "Eric Cole",
+      "salary": 6,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 4,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "alex-smalley": {
+      "id": "alex-smalley",
+      "name": "Alex Smalley",
+      "salary": 6,
+      "scores": {
+        "1": {
+          "f9": -3,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "john-keefer": {
+      "id": "john-keefer",
+      "name": "John Keefer",
+      "salary": 6,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": -2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 7,
+      "ownedPct": 0.05511811023622047
+    },
+    "andrew-novak": {
+      "id": "andrew-novak",
+      "name": "Andrew Novak",
+      "salary": 5.9,
+      "scores": {
+        "1": {
+          "f9": 3,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 2,
+      "ownedPct": 0.015748031496062992
+    },
+    "nick-taylor": {
+      "id": "nick-taylor",
+      "name": "Nick Taylor",
+      "salary": 5.9,
+      "scores": {
+        "1": {
+          "f9": -3,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 7,
+      "ownedPct": 0.05511811023622047
+    },
+    "louis-oosthuizen": {
+      "id": "louis-oosthuizen",
+      "name": "Louis Oosthuizen",
+      "salary": 5.9,
+      "scores": {},
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "michael-brennan": {
+      "id": "michael-brennan",
+      "name": "Michael Brennan",
+      "salary": 5.9,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "pierceson-coody": {
+      "id": "pierceson-coody",
+      "name": "Pierceson Coody",
+      "salary": 5.9,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": -2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "daniel-hillier": {
+      "id": "daniel-hillier",
+      "name": "Daniel Hillier",
+      "salary": 5.9,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": 3,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "bernd-wiesberger": {
+      "id": "bernd-wiesberger",
+      "name": "Bernd Wiesberger",
+      "salary": 5.8,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "billy-horschel": {
+      "id": "billy-horschel",
+      "name": "Billy Horschel",
+      "salary": 5.8,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "michael-kim": {
+      "id": "michael-kim",
+      "name": "Michael Kim",
+      "salary": 5.8,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "john-parry": {
+      "id": "john-parry",
+      "name": "John Parry",
+      "salary": 5.8,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 2,
+      "ownedPct": 0.015748031496062992
+    },
+    "frederic-lacroix": {
+      "id": "frederic-lacroix",
+      "name": "Frederic Lacroix",
+      "salary": 5.8,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "scott-vincent": {
+      "id": "scott-vincent",
+      "name": "Scott Vincent",
+      "salary": 5.8,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 4,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "matthew-jordan": {
+      "id": "matthew-jordan",
+      "name": "Matthew Jordan",
+      "salary": 5.7,
+      "scores": {
+        "1": {
+          "f9": 7,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 6,
+      "ownedPct": 0.047244094488188976
+    },
+    "sam-stevens": {
+      "id": "sam-stevens",
+      "name": "Sam Stevens",
+      "salary": 5.7,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "jesper-svensson": {
+      "id": "jesper-svensson",
+      "name": "Jesper Svensson",
+      "salary": 5.7,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "sami-valimaki": {
+      "id": "sami-valimaki",
+      "name": "Sami Valimaki",
+      "salary": 5.7,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "jackson-suber": {
+      "id": "jackson-suber",
+      "name": "Jackson Suber",
+      "salary": 5.7,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": -5,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "hennie-du-plessis": {
+      "id": "hennie-du-plessis",
+      "name": "Hennie Du Plessis",
+      "salary": 5.7,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "matthew-mccarty": {
+      "id": "matthew-mccarty",
+      "name": "Matthew McCarty",
+      "salary": 5.6,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 4,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "francesco-laporta": {
+      "id": "francesco-laporta",
+      "name": "Francesco Laporta",
+      "salary": 5.6,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": 4,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "daniel-brown": {
+      "id": "daniel-brown",
+      "name": "Daniel Brown",
+      "salary": 5.6,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": -3,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 2,
+      "ownedPct": 0.015748031496062992
+    },
+    "josele-ballester": {
+      "id": "josele-ballester",
+      "name": "Josele Ballester",
+      "salary": 5.6,
+      "scores": {
+        "1": {
+          "f9": 3,
+          "b9": -2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "laurie-canter": {
+      "id": "laurie-canter",
+      "name": "Laurie Canter",
+      "salary": 5.6,
+      "scores": {
+        "1": {
+          "f9": -2,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "peter-uihlein": {
+      "id": "peter-uihlein",
+      "name": "Peter Uihlein",
+      "salary": 5.6,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "francesco-molinari": {
+      "id": "francesco-molinari",
+      "name": "Francesco Molinari",
+      "salary": 5.6,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": -3,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "joe-dean": {
+      "id": "joe-dean",
+      "name": "Joe Dean",
+      "salary": 5.6,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "nicolas-echavarria": {
+      "id": "nicolas-echavarria",
+      "name": "Nicolas Echavarria",
+      "salary": 5.5,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "alistair-docherty": {
+      "id": "alistair-docherty",
+      "name": "Alistair Docherty",
+      "salary": 5.5,
+      "scores": {
+        "1": {
+          "f9": 3,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "antoine-rozner": {
+      "id": "antoine-rozner",
+      "name": "Antoine Rozner",
+      "salary": 5.5,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "andy-sullivan": {
+      "id": "andy-sullivan",
+      "name": "Andy Sullivan",
+      "salary": 5.5,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "padraig-harrington": {
+      "id": "padraig-harrington",
+      "name": "Padraig Harrington",
+      "salary": 5.5,
+      "scores": {
+        "1": {
+          "f9": 6,
+          "b9": 4,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 3,
+      "ownedPct": 0.023622047244094488
+    },
+    "stewart-cink": {
+      "id": "stewart-cink",
+      "name": "Stewart Cink",
+      "salary": 5.5,
+      "scores": {
+        "1": {
+          "f9": 4,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "shaun-norris": {
+      "id": "shaun-norris",
+      "name": "Shaun Norris",
+      "salary": 5.5,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "keita-nakajima": {
+      "id": "keita-nakajima",
+      "name": "Keita Nakajima",
+      "salary": 5.4,
+      "scores": {
+        "1": {
+          "f9": 3,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 2,
+      "ownedPct": 0.015748031496062992
+    },
+    "martin-couvra": {
+      "id": "martin-couvra",
+      "name": "Martin Couvra",
+      "salary": 5.4,
+      "scores": {
+        "1": {
+          "f9": 3,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "kazuma-kobori": {
+      "id": "kazuma-kobori",
+      "name": "Kazuma Kobori",
+      "salary": 5.4,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": -2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "dan-bradbury": {
+      "id": "dan-bradbury",
+      "name": "Dan Bradbury",
+      "salary": 5.4,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "caleb-surratt": {
+      "id": "caleb-surratt",
+      "name": "Caleb Surratt",
+      "salary": 5.4,
+      "scores": {
+        "1": {
+          "f9": 3,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "kota-kaneko": {
+      "id": "kota-kaneko",
+      "name": "Kota Kaneko",
+      "salary": 5.4,
+      "scores": {
+        "1": {
+          "f9": 3,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "mj-daffue": {
+      "id": "mj-daffue",
+      "name": "MJ Daffue",
+      "salary": 5.4,
+      "scores": {
+        "1": {
+          "f9": -2,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "adrien-saddier": {
+      "id": "adrien-saddier",
+      "name": "Adrien Saddier",
+      "salary": 5.3,
+      "scores": {
+        "1": {
+          "f9": 4,
+          "b9": 3,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "joakim-lagergren": {
+      "id": "joakim-lagergren",
+      "name": "Joakim Lagergren",
+      "salary": 5.3,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "michael-hollick": {
+      "id": "michael-hollick",
+      "name": "Michael Hollick",
+      "salary": 5.3,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "matthew-southgate": {
+      "id": "matthew-southgate",
+      "name": "Matthew Southgate",
+      "salary": 5.3,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": -2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "naoyuki-kataoka": {
+      "id": "naoyuki-kataoka",
+      "name": "Naoyuki Kataoka",
+      "salary": 5.3,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "jack-buchanan": {
+      "id": "jack-buchanan",
+      "name": "Jack Buchanan",
+      "salary": 5.3,
+      "scores": {
+        "1": {
+          "f9": 3,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "jeongwoo-ham": {
+      "id": "jeongwoo-ham",
+      "name": "Jeongwoo Ham",
+      "salary": 5.3,
+      "scores": {
+        "1": {
+          "f9": 4,
+          "b9": 3,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "sam-bairstow": {
+      "id": "sam-bairstow",
+      "name": "Sam Bairstow",
+      "salary": 5.2,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "travis-smyth": {
+      "id": "travis-smyth",
+      "name": "Travis Smyth",
+      "salary": 5.2,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "henrik-stenson": {
+      "id": "henrik-stenson",
+      "name": "Henrik Stenson",
+      "salary": 5.2,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "ren-yonezawa": {
+      "id": "ren-yonezawa",
+      "name": "Ren Yonezawa",
+      "salary": 5.2,
+      "scores": {
+        "1": {
+          "f9": 3,
+          "b9": 3,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "james-nicholas": {
+      "id": "james-nicholas",
+      "name": "James Nicholas",
+      "salary": 5.2,
+      "scores": {
+        "1": {
+          "f9": 3,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "matthew-baldwin": {
+      "id": "matthew-baldwin",
+      "name": "Matthew Baldwin",
+      "salary": 5.2,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "tim-wiedemeyer": {
+      "id": "tim-wiedemeyer",
+      "name": "Tim Wiedemeyer",
+      "salary": 5.2,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "kazuki-higa": {
+      "id": "kazuki-higa",
+      "name": "Kazuki Higa",
+      "salary": 5.2,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "cameron-john": {
+      "id": "cameron-john",
+      "name": "Cameron John",
+      "salary": 5.2,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "austen-truslow": {
+      "id": "austen-truslow",
+      "name": "Austen Truslow",
+      "salary": 5.1,
+      "scores": {
+        "1": {
+          "f9": 5,
+          "b9": 4,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "ryutaro-nagano": {
+      "id": "ryutaro-nagano",
+      "name": "Ryutaro Nagano",
+      "salary": 5.1,
+      "scores": {
+        "1": {
+          "f9": -1,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "lev-grinberg": {
+      "id": "lev-grinberg",
+      "name": "Lev Grinberg",
+      "salary": 5.1,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "marcus-plunkett": {
+      "id": "marcus-plunkett",
+      "name": "Marcus Plunkett",
+      "salary": 5.1,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": -1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "stuart-grehan": {
+      "id": "stuart-grehan",
+      "name": "Stuart Grehan",
+      "salary": 5.1,
+      "scores": {
+        "1": {
+          "f9": 4,
+          "b9": 3,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "jack-mcdonald": {
+      "id": "jack-mcdonald",
+      "name": "Jack McDonald",
+      "salary": 5.1,
+      "scores": {
+        "1": {
+          "f9": -2,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "darren-clarke": {
+      "id": "darren-clarke",
+      "name": "Darren Clarke",
+      "salary": 5.1,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "tiger-christensen": {
+      "id": "tiger-christensen",
+      "name": "Tiger Christensen",
+      "salary": 5.1,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 3,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "mason-howell": {
+      "id": "mason-howell",
+      "name": "Mason Howell",
+      "salary": 5.1,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": 3,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "baard-bjoernevik-skogen": {
+      "id": "baard-bjoernevik-skogen",
+      "name": "Baard Bjoernevik Skogen",
+      "salary": 5,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 1,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 1,
+      "ownedPct": 0.007874015748031496
+    },
+    "thomas-sloman": {
+      "id": "thomas-sloman",
+      "name": "Thomas Sloman",
+      "salary": 5,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 0,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "fifa-laopakdee": {
+      "id": "fifa-laopakdee",
+      "name": "Fifa Laopakdee",
+      "salary": 5,
+      "scores": {
+        "1": {
+          "f9": 3,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "nevill-ruiter": {
+      "id": "nevill-ruiter",
+      "name": "Nevill Ruiter",
+      "salary": 5,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 5,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "jiho-yang": {
+      "id": "jiho-yang",
+      "name": "Jiho Yang",
+      "salary": 5,
+      "scores": {
+        "1": {
+          "f9": 6,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "alejandro-de-castro-piera": {
+      "id": "alejandro-de-castro-piera",
+      "name": "Alejandro De Castro Piera",
+      "salary": 5,
+      "scores": {
+        "1": {
+          "f9": 1,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "mateo-pulcini": {
+      "id": "mateo-pulcini",
+      "name": "Mateo Pulcini",
+      "salary": 5,
+      "scores": {
+        "1": {
+          "f9": 3,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "david-howard": {
+      "id": "david-howard",
+      "name": "David Howard",
+      "salary": 5,
+      "scores": {
+        "1": {
+          "f9": 2,
+          "b9": 2,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    },
+    "david-duval": {
+      "id": "david-duval",
+      "name": "David Duval",
+      "salary": 5,
+      "scores": {
+        "1": {
+          "f9": 0,
+          "b9": 3,
+          "source": "excel",
+          "manual": false
+        }
+      },
+      "cut": "active",
+      "position": null,
+      "thru": null,
+      "today": null,
+      "totalToPar": null,
+      "ownedBy": 0,
+      "ownedPct": 0
+    }
+  },
+  "teams": [
+    {
+      "id": "garo-aghjayan-1",
+      "owner": "Garo Aghjayan",
+      "entryNum": 1,
+      "displayName": "Garo Aghjayan #1",
+      "roster": [
+        "matt-fitzpatrick",
+        "collin-morikawa",
+        "wyndham-clark",
+        "viktor-hovland",
+        "robert-macintyre",
+        "tom-kim"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Collin Morikawa",
+        "Wyndham Clark",
+        "Viktor Hovland",
+        "Robert MacIntyre",
+        "Tom Kim"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "garo-aghjayan-2",
+      "owner": "Garo Aghjayan",
+      "entryNum": 2,
+      "displayName": "Garo Aghjayan #2",
+      "roster": [
+        "tommy-fleetwood",
+        "tyrrell-hatton",
+        "collin-morikawa",
+        "wyndham-clark",
+        "min-woo-lee",
+        "tom-kim"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Tyrrell Hatton",
+        "Collin Morikawa",
+        "Wyndham Clark",
+        "Min Woo Lee",
+        "Tom Kim"
+      ],
+      "totalSalary": 49.99999999999999,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "garo-aghjayan-3",
+      "owner": "Garo Aghjayan",
+      "entryNum": 3,
+      "displayName": "Garo Aghjayan #3",
+      "roster": [
+        "rory-mcilroy",
+        "tommy-fleetwood",
+        "joaquin-niemann",
+        "min-woo-lee",
+        "tom-kim",
+        "akshay-bhatia"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Tommy Fleetwood",
+        "Joaquin Niemann",
+        "Min Woo Lee",
+        "Tom Kim",
+        "Akshay Bhatia"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "garo-aghjayan-4",
+      "owner": "Garo Aghjayan",
+      "entryNum": 4,
+      "displayName": "Garo Aghjayan #4",
+      "roster": [
+        "matt-fitzpatrick",
+        "tyrrell-hatton",
+        "viktor-hovland",
+        "wyndham-clark",
+        "sam-burns",
+        "tom-kim"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Tyrrell Hatton",
+        "Viktor Hovland",
+        "Wyndham Clark",
+        "Sam Burns",
+        "Tom Kim"
+      ],
+      "totalSalary": 49.99999999999999,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "garo-aghjayan-5",
+      "owner": "Garo Aghjayan",
+      "entryNum": 5,
+      "displayName": "Garo Aghjayan #5",
+      "roster": [
+        "matt-fitzpatrick",
+        "tyrrell-hatton",
+        "viktor-hovland",
+        "wyndham-clark",
+        "joaquin-niemann",
+        "tom-kim"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Tyrrell Hatton",
+        "Viktor Hovland",
+        "Wyndham Clark",
+        "Joaquin Niemann",
+        "Tom Kim"
+      ],
+      "totalSalary": 49.49999999999999,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "garo-aghjayan-6",
+      "owner": "Garo Aghjayan",
+      "entryNum": 6,
+      "displayName": "Garo Aghjayan #6",
+      "roster": [
+        "jon-rahm",
+        "tyrrell-hatton",
+        "matt-fitzpatrick",
+        "tom-kim",
+        "akshay-bhatia",
+        "robert-macintyre"
+      ],
+      "rosterNames": [
+        "Jon Rahm",
+        "Tyrrell Hatton",
+        "Matt Fitzpatrick",
+        "Tom Kim",
+        "Akshay Bhatia",
+        "Robert MacIntyre"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "justin-anderson-1",
+      "owner": "Justin Anderson",
+      "entryNum": 1,
+      "displayName": "Justin Anderson #1",
+      "roster": [
+        "rory-mcilroy",
+        "justin-rose",
+        "viktor-hovland",
+        "russell-henley",
+        "joaquin-niemann",
+        "matthew-jordan"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Justin Rose",
+        "Viktor Hovland",
+        "Russell Henley",
+        "Joaquin Niemann",
+        "Matthew Jordan"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "justin-anderson-2",
+      "owner": "Justin Anderson",
+      "entryNum": 2,
+      "displayName": "Justin Anderson #2",
+      "roster": [
+        "matt-fitzpatrick",
+        "xander-schauffele",
+        "ludvig-aberg",
+        "chris-gotterup",
+        "j-j-spaun",
+        "daniel-brown"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Xander Schauffele",
+        "Ludvig Aberg",
+        "Chris Gotterup",
+        "J.J. Spaun",
+        "Daniel Brown"
+      ],
+      "totalSalary": 49.900000000000006,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "emma-baugnet-1",
+      "owner": "Emma Baugnet",
+      "entryNum": 1,
+      "displayName": "Emma Baugnet",
+      "roster": [
+        "tommy-fleetwood",
+        "matt-fitzpatrick",
+        "justin-rose",
+        "hideki-matsuyama",
+        "min-woo-lee",
+        "nicolai-hojgaard"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Matt Fitzpatrick",
+        "Justin Rose",
+        "Hideki Matsuyama",
+        "Min Woo Lee",
+        "Nicolai Hojgaard"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "matt-baugnet-1",
+      "owner": "Matt Baugnet",
+      "entryNum": 1,
+      "displayName": "Matt Baugnet",
+      "roster": [
+        "scottie-scheffler",
+        "shane-lowry",
+        "justin-thomas",
+        "alex-fitzpatrick",
+        "jordan-spieth",
+        "j-j-spaun"
+      ],
+      "rosterNames": [
+        "Scottie Scheffler",
+        "Shane Lowry",
+        "Justin Thomas",
+        "Alex Fitzpatrick",
+        "Jordan Spieth",
+        "J.J. Spaun"
+      ],
+      "totalSalary": 50.00000000000001,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "rex-baugnet-1",
+      "owner": "Rex Baugnet",
+      "entryNum": 1,
+      "displayName": "Rex Baugnet",
+      "roster": [
+        "justin-rose",
+        "cameron-young",
+        "viktor-hovland",
+        "wyndham-clark",
+        "robert-macintyre",
+        "alex-fitzpatrick"
+      ],
+      "rosterNames": [
+        "Justin Rose",
+        "Cameron Young",
+        "Viktor Hovland",
+        "Wyndham Clark",
+        "Robert MacIntyre",
+        "Alex Fitzpatrick"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "joey-baemmert-1",
+      "owner": "Joey Baemmert",
+      "entryNum": 1,
+      "displayName": "Joey Baemmert",
+      "roster": [
+        "xander-schauffele",
+        "bryson-dechambeau",
+        "viktor-hovland",
+        "wyndham-clark",
+        "sam-burns",
+        "justin-thomas"
+      ],
+      "rosterNames": [
+        "Xander Schauffele",
+        "Bryson DeChambeau",
+        "Viktor Hovland",
+        "Wyndham Clark",
+        "Sam Burns",
+        "Justin Thomas"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "matt-baemmert-1",
+      "owner": "Matt Baemmert",
+      "entryNum": 1,
+      "displayName": "Matt Baemmert",
+      "roster": [
+        "scottie-scheffler",
+        "tommy-fleetwood",
+        "shane-lowry",
+        "si-woo-kim",
+        "nick-taylor",
+        "padraig-harrington"
+      ],
+      "rosterNames": [
+        "Scottie Scheffler",
+        "Tommy Fleetwood",
+        "Shane Lowry",
+        "Si Woo Kim",
+        "Nick Taylor",
+        "Padraig Harrington"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "jeff-beal-1",
+      "owner": "Jeff Beal",
+      "entryNum": 1,
+      "displayName": "Jeff Beal",
+      "roster": [
+        "scottie-scheffler",
+        "wyndham-clark",
+        "alex-fitzpatrick",
+        "jordan-spieth",
+        "aaron-rai",
+        "corey-conners"
+      ],
+      "rosterNames": [
+        "Scottie Scheffler",
+        "Wyndham Clark",
+        "Alex Fitzpatrick",
+        "Jordan Spieth",
+        "Aaron Rai",
+        "Corey Conners"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "mark-beal-1",
+      "owner": "Mark Beal",
+      "entryNum": 1,
+      "displayName": "Mark Beal",
+      "roster": [
+        "tommy-fleetwood",
+        "matt-fitzpatrick",
+        "robert-macintyre",
+        "russell-henley",
+        "si-woo-kim",
+        "tom-kim"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Matt Fitzpatrick",
+        "Robert MacIntyre",
+        "Russell Henley",
+        "Si Woo Kim",
+        "Tom Kim"
+      ],
+      "totalSalary": 49.9,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "max-blasczyk-1",
+      "owner": "Max Blasczyk",
+      "entryNum": 1,
+      "displayName": "Max Blasczyk #1",
+      "roster": [
+        "tommy-fleetwood",
+        "cameron-young",
+        "tyrrell-hatton",
+        "sam-burns",
+        "aaron-rai",
+        "j-j-spaun"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Cameron Young",
+        "Tyrrell Hatton",
+        "Sam Burns",
+        "Aaron Rai",
+        "J.J. Spaun"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "max-blasczyk-2",
+      "owner": "Max Blasczyk",
+      "entryNum": 2,
+      "displayName": "Max Blasczyk #2",
+      "roster": [
+        "scottie-scheffler",
+        "matt-fitzpatrick",
+        "jordan-spieth",
+        "tom-kim",
+        "rickie-fowler",
+        "daniel-berger"
+      ],
+      "rosterNames": [
+        "Scottie Scheffler",
+        "Matt Fitzpatrick",
+        "Jordan Spieth",
+        "Tom Kim",
+        "Rickie Fowler",
+        "Daniel Berger"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "paul-blasczyk-1",
+      "owner": "Paul Blasczyk",
+      "entryNum": 1,
+      "displayName": "Paul Blasczyk #1",
+      "roster": [
+        "rory-mcilroy",
+        "ludvig-aberg",
+        "robert-macintyre",
+        "jordan-spieth",
+        "tom-kim",
+        "adam-scott"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Ludvig Aberg",
+        "Robert Macintyre",
+        "Jordan Spieth",
+        "Tom Kim",
+        "Adam Scott"
+      ],
+      "totalSalary": 49.7,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "paul-blasczyk-2",
+      "owner": "Paul Blasczyk",
+      "entryNum": 2,
+      "displayName": "Paul Blasczyk #2",
+      "roster": [
+        "tommy-fleetwood",
+        "matt-fitzpatrick",
+        "robert-macintyre",
+        "sam-burns",
+        "hideki-matsuyama",
+        "cameron-smith"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Matt Fitzpatrick",
+        "Robert MacIntyre",
+        "Sam Burns",
+        "Hideki Matsuyama",
+        "Cameron Smith"
+      ],
+      "totalSalary": 49.99999999999999,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "paul-blasczyk-3",
+      "owner": "Paul Blasczyk",
+      "entryNum": 3,
+      "displayName": "Paul Blasczyk #3",
+      "roster": [
+        "jon-rahm",
+        "justin-rose",
+        "tyrrell-hatton",
+        "wyndham-clark",
+        "patrick-reed",
+        "maverick-mcnealy"
+      ],
+      "rosterNames": [
+        "Jon Rahm",
+        "Justin Rose",
+        "Tyrrell Hatton",
+        "Wyndham Clark",
+        "Patrick Reed",
+        "Maverick McNealy"
+      ],
+      "totalSalary": 49.599999999999994,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "joe-brzezinski-1",
+      "owner": "Joe Brzezinski",
+      "entryNum": 1,
+      "displayName": "Joe Brzezinski",
+      "roster": [
+        "rory-mcilroy",
+        "xander-schauffele",
+        "russell-henley",
+        "aaron-rai",
+        "corey-conners",
+        "j-j-spaun"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Xander Schauffele",
+        "Russell Henley",
+        "Aaron Rai",
+        "Corey Conners",
+        "J.J. Spaun"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "aj-cantrall-1",
+      "owner": "AJ Cantrall",
+      "entryNum": 1,
+      "displayName": "AJ Cantrall",
+      "roster": [
+        "jon-rahm",
+        "tyrrell-hatton",
+        "chris-gotterup",
+        "wyndham-clark",
+        "russell-henley",
+        "tom-kim"
+      ],
+      "rosterNames": [
+        "Jon Rahm",
+        "Tyrrell Hatton",
+        "Chris Gotterup",
+        "Wyndham Clark",
+        "Russell Henley",
+        "Tom Kim"
+      ],
+      "totalSalary": 49.8,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "ross-castner-1",
+      "owner": "Ross Castner",
+      "entryNum": 1,
+      "displayName": "Ross Castner #1",
+      "roster": [
+        "rory-mcilroy",
+        "tyrrell-hatton",
+        "collin-morikawa",
+        "russell-henley",
+        "ben-griffin",
+        "john-keefer"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Tyrrell Hatton",
+        "Collin Morikawa",
+        "Russell Henley",
+        "Ben Griffin",
+        "John Keefer"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "ross-castner-2",
+      "owner": "Ross Castner",
+      "entryNum": 2,
+      "displayName": "Ross Castner #2",
+      "roster": [
+        "matt-fitzpatrick",
+        "justin-rose",
+        "chris-gotterup",
+        "robert-macintyre",
+        "sam-burns",
+        "victor-perez"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Justin Rose",
+        "Chris Gotterup",
+        "Robert MacIntyre",
+        "Sam Burns",
+        "Victor Perez"
+      ],
+      "totalSalary": 49.8,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "drew-chorlton-1",
+      "owner": "Drew Chorlton",
+      "entryNum": 1,
+      "displayName": "Drew Chorlton",
+      "roster": [
+        "matt-fitzpatrick",
+        "jon-rahm",
+        "chris-gotterup",
+        "joaquin-niemann",
+        "aaron-rai",
+        "tom-kim"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Jon Rahm",
+        "Chris Gotterup",
+        "Joaquin Niemann",
+        "Aaron Rai",
+        "Tom Kim"
+      ],
+      "totalSalary": 49.4,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "mac-chorlton-1",
+      "owner": "Mac Chorlton",
+      "entryNum": 1,
+      "displayName": "Mac Chorlton",
+      "roster": [
+        "scottie-scheffler",
+        "alex-fitzpatrick",
+        "si-woo-kim",
+        "min-woo-lee",
+        "tom-kim",
+        "ben-griffin"
+      ],
+      "rosterNames": [
+        "Scottie Scheffler",
+        "Alex Fitzpatrick",
+        "Si Woo Kim",
+        "Min Woo Lee",
+        "Tom Kim",
+        "Ben Griffin"
+      ],
+      "totalSalary": 48.099999999999994,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "andrew-cliff-1",
+      "owner": "Andrew Cliff",
+      "entryNum": 1,
+      "displayName": "Andrew Cliff",
+      "roster": [
+        "rory-mcilroy",
+        "matt-fitzpatrick",
+        "chris-gotterup",
+        "matt-wallace",
+        "jordan-l-smith",
+        "nick-taylor"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Matt Fitzpatrick",
+        "Chris Gotterup",
+        "Matt Wallace",
+        "Jordan L. Smith",
+        "Nick Taylor"
+      ],
+      "totalSalary": 48.699999999999996,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "matt-coopman-1",
+      "owner": "Matt Coopman",
+      "entryNum": 1,
+      "displayName": "Matt Coopman #1",
+      "roster": [
+        "matt-fitzpatrick",
+        "collin-morikawa",
+        "chris-gotterup",
+        "viktor-hovland",
+        "russell-henley",
+        "tom-kim"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Collin Morikawa",
+        "Chris Gotterup",
+        "Viktor Hovland",
+        "Russell Henley",
+        "Tom Kim"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "matt-coopman-2",
+      "owner": "Matt Coopman",
+      "entryNum": 2,
+      "displayName": "Matt Coopman #2",
+      "roster": [
+        "tommy-fleetwood",
+        "jon-rahm",
+        "ludvig-aberg",
+        "si-woo-kim",
+        "brian-harman",
+        "sepp-straka"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Jon Rahm",
+        "Ludvig Aberg",
+        "Si Woo Kim",
+        "Brian Harman",
+        "Sepp Straka"
+      ],
+      "totalSalary": 49.6,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "aaron-deacon-1",
+      "owner": "Aaron Deacon",
+      "entryNum": 1,
+      "displayName": "Aaron Deacon #1",
+      "roster": [
+        "scottie-scheffler",
+        "jon-rahm",
+        "robert-macintyre",
+        "akshay-bhatia",
+        "jordan-l-smith",
+        "rasmus-neergaard-petersen"
+      ],
+      "rosterNames": [
+        "Scottie Scheffler",
+        "Jon Rahm",
+        "Robert MacIntyre",
+        "Akshay Bhatia",
+        "Jordan L. Smith",
+        "Rasmus Neergaard-Petersen"
+      ],
+      "totalSalary": 49.900000000000006,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "aaron-deacon-2",
+      "owner": "Aaron Deacon",
+      "entryNum": 2,
+      "displayName": "Aaron Deacon #2",
+      "roster": [
+        "xander-schauffele",
+        "collin-morikawa",
+        "bryson-dechambeau",
+        "viktor-hovland",
+        "russell-henley",
+        "hideki-matsuyama"
+      ],
+      "rosterNames": [
+        "Xander Schauffele",
+        "Collin Morikawa",
+        "Bryson DeChambeau",
+        "Viktor Hovland",
+        "Russell Henley",
+        "Hideki Matsuyama"
+      ],
+      "totalSalary": 49.800000000000004,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "jeff-deacon-1",
+      "owner": "Jeff Deacon",
+      "entryNum": 1,
+      "displayName": "Jeff Deacon #1",
+      "roster": [
+        "rory-mcilroy",
+        "matt-fitzpatrick",
+        "sam-burns",
+        "si-woo-kim",
+        "tom-kim",
+        "brian-harman"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Matt Fitzpatrick",
+        "Sam Burns",
+        "Si Woo Kim",
+        "Tom Kim",
+        "Brian Harman"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "jeff-deacon-2",
+      "owner": "Jeff Deacon",
+      "entryNum": 2,
+      "displayName": "Jeff Deacon #2",
+      "roster": [
+        "tommy-fleetwood",
+        "justin-rose",
+        "collin-morikawa",
+        "chris-gotterup",
+        "alex-fitzpatrick",
+        "john-parry"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Justin Rose",
+        "Collin Morikawa",
+        "Chris Gotterup",
+        "Alex Fitzpatrick",
+        "John Parry"
+      ],
+      "totalSalary": 49.99999999999999,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "jeff-deacon-3",
+      "owner": "Jeff Deacon",
+      "entryNum": 3,
+      "displayName": "Jeff Deacon #3",
+      "roster": [
+        "scottie-scheffler",
+        "tyrrell-hatton",
+        "viktor-hovland",
+        "aaron-rai",
+        "eugenio-lopez-chacarra",
+        "matthew-jordan"
+      ],
+      "rosterNames": [
+        "Scottie Scheffler",
+        "Tyrrell Hatton",
+        "Viktor Hovland",
+        "Aaron Rai",
+        "Eugenio Lopez-Chacarra",
+        "Matthew Jordan"
+      ],
+      "totalSalary": 50.00000000000001,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "scott-dequaine-1",
+      "owner": "Scott Dequaine",
+      "entryNum": 1,
+      "displayName": "Scott Dequaine",
+      "roster": [
+        "tommy-fleetwood",
+        "matt-fitzpatrick",
+        "sam-burns",
+        "brooks-koepka",
+        "aaron-rai",
+        "patrick-reed"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Matt Fitzpatrick",
+        "Sam Burns",
+        "Brooks Koepka",
+        "Aaron Rai",
+        "Patrick Reed"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "danny-do-1",
+      "owner": "Danny Do",
+      "entryNum": 1,
+      "displayName": "Danny Do #1",
+      "roster": [
+        "xander-schauffele",
+        "ludvig-aberg",
+        "tyrrell-hatton",
+        "chris-gotterup",
+        "shane-lowry",
+        "matthew-mccarty"
+      ],
+      "rosterNames": [
+        "Xander Schauffele",
+        "Ludvig Aberg",
+        "Tyrrell Hatton",
+        "Chris Gotterup",
+        "Shane Lowry",
+        "Matthew McCarty"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "danny-do-2",
+      "owner": "Danny Do",
+      "entryNum": 2,
+      "displayName": "Danny Do #2",
+      "roster": [
+        "rory-mcilroy",
+        "collin-morikawa",
+        "wyndham-clark",
+        "russell-henley",
+        "aaron-rai",
+        "alex-noren"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Collin Morikawa",
+        "Wyndham Clark",
+        "Russell Henley",
+        "Aaron Rai",
+        "Alex Noren"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "scott-feldhausen-1",
+      "owner": "Scott Feldhausen",
+      "entryNum": 1,
+      "displayName": "Scott Feldhausen",
+      "roster": [
+        "rory-mcilroy",
+        "collin-morikawa",
+        "bryson-dechambeau",
+        "wyndham-clark",
+        "akshay-bhatia",
+        "daniel-berger"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Collin Morikawa",
+        "Bryson DeChambeau",
+        "Wyndham Clark",
+        "Akshay Bhatia",
+        "Daniel Berger"
+      ],
+      "totalSalary": 50.00000000000001,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "nathan-felhofer-1",
+      "owner": "Nathan Felhofer",
+      "entryNum": 1,
+      "displayName": "Nathan Felhofer #1",
+      "roster": [
+        "rory-mcilroy",
+        "matt-fitzpatrick",
+        "robert-macintyre",
+        "tom-kim",
+        "j-j-spaun",
+        "brian-harman"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Matt Fitzpatrick",
+        "Robert MacIntyre",
+        "Tom Kim",
+        "J.J. Spaun",
+        "Brian Harman"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "nathan-felhofer-2",
+      "owner": "Nathan Felhofer",
+      "entryNum": 2,
+      "displayName": "Nathan Felhofer #2",
+      "roster": [
+        "tommy-fleetwood",
+        "justin-rose",
+        "collin-morikawa",
+        "shane-lowry",
+        "patrick-reed",
+        "cameron-smith"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Justin Rose",
+        "Collin Morikawa",
+        "Shane Lowry",
+        "Patrick Reed",
+        "Cameron Smith"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "craig-francois-1",
+      "owner": "Craig Francois",
+      "entryNum": 1,
+      "displayName": "Craig Francois #1",
+      "roster": [
+        "rory-mcilroy",
+        "tommy-fleetwood",
+        "russell-henley",
+        "corey-conners",
+        "nicolai-hojgaard",
+        "kurt-kitayama"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Tommy Fleetwood",
+        "Russell Henley",
+        "Corey Conners",
+        "Nicolai Hojgaard",
+        "Kurt Kitayama"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "craig-francois-2",
+      "owner": "Craig Francois",
+      "entryNum": 2,
+      "displayName": "Craig Francois #2",
+      "roster": [
+        "matt-fitzpatrick",
+        "xander-schauffele",
+        "justin-rose",
+        "chris-gotterup",
+        "ryan-fox",
+        "rasmus-hojgaard"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Xander Schauffele",
+        "Justin Rose",
+        "Chris Gotterup",
+        "Ryan Fox",
+        "Rasmus Hojgaard"
+      ],
+      "totalSalary": 49.99999999999999,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "craig-francois-3",
+      "owner": "Craig Francois",
+      "entryNum": 3,
+      "displayName": "Craig Francois #3",
+      "roster": [
+        "ludvig-aberg",
+        "tyrrell-hatton",
+        "collin-morikawa",
+        "viktor-hovland",
+        "wyndham-clark",
+        "kristoffer-reitan"
+      ],
+      "rosterNames": [
+        "Ludvig Aberg",
+        "Tyrrell Hatton",
+        "Collin Morikawa",
+        "Viktor Hovland",
+        "Wyndham Clark",
+        "Kristoffer Reitan"
+      ],
+      "totalSalary": 49.900000000000006,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "joe-graf-1",
+      "owner": "Joe Graf",
+      "entryNum": 1,
+      "displayName": "Joe Graf #1",
+      "roster": [
+        "xander-schauffele",
+        "jon-rahm",
+        "ludvig-aberg",
+        "collin-morikawa",
+        "max-homa",
+        "michael-thorbjornsen"
+      ],
+      "rosterNames": [
+        "Xander Schauffele",
+        "Jon Rahm",
+        "Ludvig Aberg",
+        "Collin Morikawa",
+        "Max Homa",
+        "Michael Thorbjornsen"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "joe-graf-2",
+      "owner": "Joe Graf",
+      "entryNum": 2,
+      "displayName": "Joe Graf #2",
+      "roster": [
+        "rory-mcilroy",
+        "matt-fitzpatrick",
+        "russell-henley",
+        "alex-fitzpatrick",
+        "patrick-reed",
+        "bud-cauley"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Matt Fitzpatrick",
+        "Russell Henley",
+        "Alex Fitzpatrick",
+        "Patrick Reed",
+        "Bud Cauley"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "jackson-hardy-1",
+      "owner": "Jackson Hardy",
+      "entryNum": 1,
+      "displayName": "Jackson Hardy",
+      "roster": [
+        "rory-mcilroy",
+        "ludvig-aberg",
+        "robert-macintyre",
+        "sam-burns",
+        "harris-english",
+        "ryan-fox"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Ludvig Aberg",
+        "Robert MacIntyre",
+        "Sam Burns",
+        "Harris English",
+        "Ryan Fox"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "scott-haskins-1",
+      "owner": "Scott Haskins",
+      "entryNum": 1,
+      "displayName": "Scott Haskins",
+      "roster": [
+        "rory-mcilroy",
+        "justin-rose",
+        "chris-gotterup",
+        "patrick-reed",
+        "tom-kim",
+        "maverick-mcnealy"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Justin Rose",
+        "Chris Gotterup",
+        "Patrick Reed",
+        "Tom Kim",
+        "Maverick McNealy"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "ed-holand-1",
+      "owner": "Ed Holand",
+      "entryNum": 1,
+      "displayName": "Ed Holand",
+      "roster": [
+        "scottie-scheffler",
+        "collin-morikawa",
+        "wyndham-clark",
+        "brooks-koepka",
+        "max-homa",
+        "michael-kim"
+      ],
+      "rosterNames": [
+        "Scottie Scheffler",
+        "Collin Morikawa",
+        "Wyndham Clark",
+        "Brooks Koepka",
+        "Max Homa",
+        "Michael Kim"
+      ],
+      "totalSalary": 49.99999999999999,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "scott-jacobson-1",
+      "owner": "Scott Jacobson",
+      "entryNum": 1,
+      "displayName": "Scott Jacobson",
+      "roster": [
+        "jon-rahm",
+        "cameron-young",
+        "collin-morikawa",
+        "viktor-hovland",
+        "robert-macintyre",
+        "harry-hall"
+      ],
+      "rosterNames": [
+        "Jon Rahm",
+        "Cameron Young",
+        "Collin Morikawa",
+        "Viktor Hovland",
+        "Robert MacIntyre",
+        "Harry Hall"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "andrew-jakubicz-1",
+      "owner": "Andrew Jakubicz",
+      "entryNum": 1,
+      "displayName": "Andrew Jakubicz",
+      "roster": [
+        "rory-mcilroy",
+        "justin-rose",
+        "viktor-hovland",
+        "jordan-spieth",
+        "adam-scott",
+        "j-t-poston"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Justin Rose",
+        "Viktor Hovland",
+        "Jordan Spieth",
+        "Adam Scott",
+        "J.T. Poston"
+      ],
+      "totalSalary": 49.1,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "kane-karman-1",
+      "owner": "Kane Karman",
+      "entryNum": 1,
+      "displayName": "Kane Karman",
+      "roster": [
+        "rory-mcilroy",
+        "cameron-young",
+        "collin-morikawa",
+        "jordan-spieth",
+        "hideki-matsuyama",
+        "sungjae-im"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Cameron Young",
+        "Collin Morikawa",
+        "Jordan Spieth",
+        "Hideki Matsuyama",
+        "Sungjae Im"
+      ],
+      "totalSalary": 49.9,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "matthew-karman-1",
+      "owner": "Matthew Karman",
+      "entryNum": 1,
+      "displayName": "Matthew Karman #1",
+      "roster": [
+        "tommy-fleetwood",
+        "matt-fitzpatrick",
+        "justin-rose",
+        "tyrrell-hatton",
+        "john-parry",
+        "matthew-jordan"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Matt Fitzpatrick",
+        "Justin Rose",
+        "Tyrrell Hatton",
+        "John Parry",
+        "Matthew Jordan"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "matthew-karman-2",
+      "owner": "Matthew Karman",
+      "entryNum": 2,
+      "displayName": "Matthew Karman #2",
+      "roster": [
+        "rory-mcilroy",
+        "ludvig-aberg",
+        "robert-macintyre",
+        "shane-lowry",
+        "nicolai-hojgaard",
+        "hao-tong-li"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Ludvig Aberg",
+        "Robert MacIntyre",
+        "Shane Lowry",
+        "Nicolai Hojgaard",
+        "Hao-Tong Li"
+      ],
+      "totalSalary": 49.900000000000006,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "matthew-karman-3",
+      "owner": "Matthew Karman",
+      "entryNum": 3,
+      "displayName": "Matthew Karman #3",
+      "roster": [
+        "xander-schauffele",
+        "jon-rahm",
+        "cameron-young",
+        "collin-morikawa",
+        "j-j-spaun",
+        "j-t-poston"
+      ],
+      "rosterNames": [
+        "Xander Schauffele",
+        "Jon Rahm",
+        "Cameron Young",
+        "Collin Morikawa",
+        "J.J. Spaun",
+        "J.T. Poston"
+      ],
+      "totalSalary": 50.00000000000001,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "matthew-karman-4",
+      "owner": "Matthew Karman",
+      "entryNum": 4,
+      "displayName": "Matthew Karman #4",
+      "roster": [
+        "scottie-scheffler",
+        "bryson-dechambeau",
+        "brooks-koepka",
+        "justin-thomas",
+        "jordan-spieth",
+        "john-keefer"
+      ],
+      "rosterNames": [
+        "Scottie Scheffler",
+        "Bryson DeChambeau",
+        "Brooks Koepka",
+        "Justin Thomas",
+        "Jordan Spieth",
+        "John Keefer"
+      ],
+      "totalSalary": 50.00000000000001,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "joel-kemppainen-1",
+      "owner": "Joel Kemppainen",
+      "entryNum": 1,
+      "displayName": "Joel Kemppainen #1",
+      "roster": [
+        "tommy-fleetwood",
+        "matt-fitzpatrick",
+        "tyrrell-hatton",
+        "robert-macintyre",
+        "nicolai-hojgaard",
+        "john-keefer"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Matt Fitzpatrick",
+        "Tyrrell Hatton",
+        "Robert MacIntyre",
+        "Nicolai Hojgaard",
+        "John Keefer"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "joel-kemppainen-2",
+      "owner": "Joel Kemppainen",
+      "entryNum": 2,
+      "displayName": "Joel Kemppainen #2",
+      "roster": [
+        "jon-rahm",
+        "ludvig-aberg",
+        "justin-rose",
+        "viktor-hovland",
+        "shane-lowry",
+        "jesper-svensson"
+      ],
+      "rosterNames": [
+        "Jon Rahm",
+        "Ludvig Aberg",
+        "Justin Rose",
+        "Viktor Hovland",
+        "Shane Lowry",
+        "Jesper Svensson"
+      ],
+      "totalSalary": 50.00000000000001,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "ryan-koeberl-1",
+      "owner": "Ryan Koeberl",
+      "entryNum": 1,
+      "displayName": "Ryan Koeberl",
+      "roster": [
+        "tommy-fleetwood",
+        "jon-rahm",
+        "ludvig-aberg",
+        "justin-thomas",
+        "patrick-cantlay",
+        "casey-jarvis"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Jon Rahm",
+        "Ludvig Aberg",
+        "Justin Thomas",
+        "Patrick Cantlay",
+        "Casey Jarvis"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "dalton-kropp-1",
+      "owner": "Dalton Kropp",
+      "entryNum": 1,
+      "displayName": "Dalton Kropp #1",
+      "roster": [
+        "jon-rahm",
+        "ludvig-aberg",
+        "chris-gotterup",
+        "shane-lowry",
+        "alex-fitzpatrick",
+        "jordan-spieth"
+      ],
+      "rosterNames": [
+        "Jon Rahm",
+        "Ludvig Aberg",
+        "Chris Gotterup",
+        "Shane Lowry",
+        "Alex Fitzpatrick",
+        "Jordan Spieth"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "dalton-kropp-2",
+      "owner": "Dalton Kropp",
+      "entryNum": 2,
+      "displayName": "Dalton Kropp #2",
+      "roster": [
+        "matt-fitzpatrick",
+        "justin-rose",
+        "tyrrell-hatton",
+        "collin-morikawa",
+        "si-woo-kim",
+        "max-homa"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Justin Rose",
+        "Tyrrell Hatton",
+        "Collin Morikawa",
+        "Si Woo Kim",
+        "Max Homa"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "bill-kuether-1",
+      "owner": "Bill Kuether",
+      "entryNum": 1,
+      "displayName": "Bill Kuether #1",
+      "roster": [
+        "rory-mcilroy",
+        "collin-morikawa",
+        "viktor-hovland",
+        "brooks-koepka",
+        "justin-thomas",
+        "casey-jarvis"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Collin Morikawa",
+        "Viktor Hovland",
+        "Brooks Koepka",
+        "Justin Thomas",
+        "Casey Jarvis"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "bill-kuether-2",
+      "owner": "Bill Kuether",
+      "entryNum": 2,
+      "displayName": "Bill Kuether #2",
+      "roster": [
+        "tommy-fleetwood",
+        "ludvig-aberg",
+        "justin-rose",
+        "tyrrell-hatton",
+        "tom-kim",
+        "keita-nakajima"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Ludvig Aberg",
+        "Justin Rose",
+        "Tyrrell Hatton",
+        "Tom Kim",
+        "Keita Nakajima"
+      ],
+      "totalSalary": 49.99999999999999,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "josh-leiterman-1",
+      "owner": "Josh Leiterman",
+      "entryNum": 1,
+      "displayName": "Josh Leiterman",
+      "roster": [
+        "rory-mcilroy",
+        "matt-fitzpatrick",
+        "shane-lowry",
+        "tom-kim",
+        "j-j-spaun",
+        "nicolai-hojgaard"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Matt Fitzpatrick",
+        "Shane Lowry",
+        "Tom Kim",
+        "J.J. Spaun",
+        "Nicolai Hojgaard"
+      ],
+      "totalSalary": 49.9,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "chad-levanetz-1",
+      "owner": "Chad Levanetz",
+      "entryNum": 1,
+      "displayName": "Chad Levanetz #1",
+      "roster": [
+        "xander-schauffele",
+        "cameron-young",
+        "tyrrell-hatton",
+        "shane-lowry",
+        "alex-fitzpatrick",
+        "patrick-reed"
+      ],
+      "rosterNames": [
+        "Xander Schauffele",
+        "Cameron Young",
+        "Tyrrell Hatton",
+        "Shane Lowry",
+        "Alex Fitzpatrick",
+        "Patrick Reed"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "chad-levanetz-2",
+      "owner": "Chad Levanetz",
+      "entryNum": 2,
+      "displayName": "Chad Levanetz #2",
+      "roster": [
+        "tommy-fleetwood",
+        "justin-rose",
+        "viktor-hovland",
+        "russell-henley",
+        "jordan-spieth",
+        "aaron-rai"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Justin Rose",
+        "Viktor Hovland",
+        "Russell Henley",
+        "Jordan Spieth",
+        "Aaron Rai"
+      ],
+      "totalSalary": 49.900000000000006,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "chris-magers-1",
+      "owner": "Chris Magers",
+      "entryNum": 1,
+      "displayName": "Chris Magers",
+      "roster": [
+        "tommy-fleetwood",
+        "cameron-young",
+        "wyndham-clark",
+        "russell-henley",
+        "hideki-matsuyama",
+        "sahith-theegala"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Cameron Young",
+        "Wyndham Clark",
+        "Russell Henley",
+        "Hideki Matsuyama",
+        "Sahith Theegala"
+      ],
+      "totalSalary": 48.5,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "jon-marcussen-1",
+      "owner": "Jon Marcussen",
+      "entryNum": 1,
+      "displayName": "Jon Marcussen",
+      "roster": [
+        "tommy-fleetwood",
+        "chris-gotterup",
+        "wyndham-clark",
+        "sam-burns",
+        "jordan-spieth",
+        "tom-kim"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Chris Gotterup",
+        "Wyndham Clark",
+        "Sam Burns",
+        "Jordan Spieth",
+        "Tom Kim"
+      ],
+      "totalSalary": 49,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "jordan-mccheyne-1",
+      "owner": "Jordan McCheyne",
+      "entryNum": 1,
+      "displayName": "Jordan McCheyne #1",
+      "roster": [
+        "tommy-fleetwood",
+        "matt-fitzpatrick",
+        "robert-macintyre",
+        "sam-burns",
+        "tom-kim",
+        "alex-noren"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Matt Fitzpatrick",
+        "Robert MacIntyre",
+        "Sam Burns",
+        "Tom Kim",
+        "Alex Noren"
+      ],
+      "totalSalary": 49.49999999999999,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "jordan-mccheyne-2",
+      "owner": "Jordan McCheyne",
+      "entryNum": 2,
+      "displayName": "Jordan McCheyne #2",
+      "roster": [
+        "matt-fitzpatrick",
+        "ludvig-aberg",
+        "justin-rose",
+        "robert-macintyre",
+        "tom-kim",
+        "kurt-kitayama"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Ludvig Aberg",
+        "Justin Rose",
+        "Robert MacIntyre",
+        "Tom Kim",
+        "Kurt Kitayama"
+      ],
+      "totalSalary": 49.699999999999996,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "jordan-mccheyne-3",
+      "owner": "Jordan McCheyne",
+      "entryNum": 3,
+      "displayName": "Jordan McCheyne #3",
+      "roster": [
+        "rory-mcilroy",
+        "cameron-young",
+        "chris-gotterup",
+        "sam-burns",
+        "aaron-rai",
+        "matthew-jordan"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Cameron Young",
+        "Chris Gotterup",
+        "Sam Burns",
+        "Aaron Rai",
+        "Matthew Jordan"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "jordan-mccheyne-4",
+      "owner": "Jordan McCheyne",
+      "entryNum": 4,
+      "displayName": "Jordan McCheyne #4",
+      "roster": [
+        "tommy-fleetwood",
+        "tyrrell-hatton",
+        "wyndham-clark",
+        "sam-burns",
+        "alex-fitzpatrick",
+        "min-woo-lee"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Tyrrell Hatton",
+        "Wyndham Clark",
+        "Sam Burns",
+        "Alex Fitzpatrick",
+        "Min Woo Lee"
+      ],
+      "totalSalary": 49.699999999999996,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "jordan-mccheyne-5",
+      "owner": "Jordan McCheyne",
+      "entryNum": 5,
+      "displayName": "Jordan McCheyne #5",
+      "roster": [
+        "cameron-young",
+        "tyrrell-hatton",
+        "collin-morikawa",
+        "viktor-hovland",
+        "robert-macintyre",
+        "patrick-reed"
+      ],
+      "rosterNames": [
+        "Cameron Young",
+        "Tyrrell Hatton",
+        "Collin Morikawa",
+        "Viktor Hovland",
+        "Robert MacIntyre",
+        "Patrick Reed"
+      ],
+      "totalSalary": 49.9,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "steve-mccheyne-1",
+      "owner": "Steve McCheyne",
+      "entryNum": 1,
+      "displayName": "Steve McCheyne",
+      "roster": [
+        "xander-schauffele",
+        "justin-rose",
+        "wyndham-clark",
+        "robert-macintyre",
+        "shane-lowry",
+        "ben-griffin"
+      ],
+      "rosterNames": [
+        "Xander Schauffele",
+        "Justin Rose",
+        "Wyndham Clark",
+        "Robert MacIntyre",
+        "Shane Lowry",
+        "Ben Griffin"
+      ],
+      "totalSalary": 49.79999999999999,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "tyler-mcgill-1",
+      "owner": "Tyler Mcgill",
+      "entryNum": 1,
+      "displayName": "Tyler Mcgill #1",
+      "roster": [
+        "xander-schauffele",
+        "bryson-dechambeau",
+        "viktor-hovland",
+        "wyndham-clark",
+        "sam-burns",
+        "joaquin-niemann"
+      ],
+      "rosterNames": [
+        "Xander Schauffele",
+        "Bryson DeChambeau",
+        "Viktor Hovland",
+        "Wyndham Clark",
+        "Sam Burns",
+        "Joaquin Niemann"
+      ],
+      "totalSalary": 49.8,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "tyler-mcgill-2",
+      "owner": "Tyler Mcgill",
+      "entryNum": 2,
+      "displayName": "Tyler Mcgill #2",
+      "roster": [
+        "matt-fitzpatrick",
+        "cameron-young",
+        "robert-macintyre",
+        "shane-lowry",
+        "russell-henley",
+        "alex-fitzpatrick"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Cameron Young",
+        "Robert MacIntyre",
+        "Shane Lowry",
+        "Russell Henley",
+        "Alex Fitzpatrick"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "chris-mead-1",
+      "owner": "Chris Mead",
+      "entryNum": 1,
+      "displayName": "Chris Mead #1",
+      "roster": [
+        "matt-fitzpatrick",
+        "justin-rose",
+        "tyrrell-hatton",
+        "collin-morikawa",
+        "corey-conners",
+        "sahith-theegala"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Justin Rose",
+        "Tyrrell Hatton",
+        "Collin Morikawa",
+        "Corey Conners",
+        "Sahith Theegala"
+      ],
+      "totalSalary": 49.7,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "chris-mead-2",
+      "owner": "Chris Mead",
+      "entryNum": 2,
+      "displayName": "Chris Mead #2",
+      "roster": [
+        "tommy-fleetwood",
+        "justin-rose",
+        "viktor-hovland",
+        "robert-macintyre",
+        "patrick-reed",
+        "akshay-bhatia"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Justin Rose",
+        "Viktor Hovland",
+        "Robert MacIntyre",
+        "Patrick Reed",
+        "Akshay Bhatia"
+      ],
+      "totalSalary": 49.50000000000001,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "brock-mitby-1",
+      "owner": "Brock Mitby",
+      "entryNum": 1,
+      "displayName": "Brock Mitby",
+      "roster": [
+        "rory-mcilroy",
+        "tyrrell-hatton",
+        "viktor-hovland",
+        "robert-macintyre",
+        "tom-kim",
+        "michael-thorbjornsen"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Tyrrell Hatton",
+        "Viktor Hovland",
+        "Robert MacIntyre",
+        "Tom Kim",
+        "Michael Thorbjornsen"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "shawn-mulhaney-1",
+      "owner": "Shawn Mulhaney",
+      "entryNum": 1,
+      "displayName": "Shawn Mulhaney #1",
+      "roster": [
+        "rory-mcilroy",
+        "matt-fitzpatrick",
+        "chris-gotterup",
+        "robert-macintyre",
+        "sungjae-im",
+        "martin-couvra"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Matt Fitzpatrick",
+        "Chris Gotterup",
+        "Robert MacIntyre",
+        "Sungjae Im",
+        "Martin Couvra"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "shawn-mulhaney-2",
+      "owner": "Shawn Mulhaney",
+      "entryNum": 2,
+      "displayName": "Shawn Mulhaney #2",
+      "roster": [
+        "xander-schauffele",
+        "justin-rose",
+        "wyndham-clark",
+        "shane-lowry",
+        "jordan-spieth",
+        "harris-english"
+      ],
+      "rosterNames": [
+        "Xander Schauffele",
+        "Justin Rose",
+        "Wyndham Clark",
+        "Shane Lowry",
+        "Jordan Spieth",
+        "Harris English"
+      ],
+      "totalSalary": 48.900000000000006,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "shawn-mulhaney-3",
+      "owner": "Shawn Mulhaney",
+      "entryNum": 3,
+      "displayName": "Shawn Mulhaney #3",
+      "roster": [
+        "scottie-scheffler",
+        "viktor-hovland",
+        "min-woo-lee",
+        "tom-kim",
+        "rasmus-hojgaard",
+        "kurt-kitayama"
+      ],
+      "rosterNames": [
+        "Scottie Scheffler",
+        "Viktor Hovland",
+        "Min Woo Lee",
+        "Tom Kim",
+        "Rasmus Hojgaard",
+        "Kurt Kitayama"
+      ],
+      "totalSalary": 48.099999999999994,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "brooke-noeldner-1",
+      "owner": "Brooke Noeldner",
+      "entryNum": 1,
+      "displayName": "Brooke Noeldner",
+      "roster": [
+        "matt-fitzpatrick",
+        "xander-schauffele",
+        "jon-rahm",
+        "tyrrell-hatton",
+        "max-homa",
+        "austen-truslow"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Xander Schauffele",
+        "Jon Rahm",
+        "Tyrrell Hatton",
+        "Max Homa",
+        "Austen Truslow"
+      ],
+      "totalSalary": 49.9,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "derek-peppler-1",
+      "owner": "Derek Peppler",
+      "entryNum": 1,
+      "displayName": "Derek Peppler #1",
+      "roster": [
+        "scottie-scheffler",
+        "tommy-fleetwood",
+        "chris-gotterup",
+        "ryan-fox",
+        "matthew-jordan",
+        "daniel-brown"
+      ],
+      "rosterNames": [
+        "Scottie Scheffler",
+        "Tommy Fleetwood",
+        "Chris Gotterup",
+        "Ryan Fox",
+        "Matthew Jordan",
+        "Daniel Brown"
+      ],
+      "totalSalary": 49.9,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "derek-peppler-2",
+      "owner": "Derek Peppler",
+      "entryNum": 2,
+      "displayName": "Derek Peppler #2",
+      "roster": [
+        "rory-mcilroy",
+        "tommy-fleetwood",
+        "shane-lowry",
+        "cameron-smith",
+        "jason-day",
+        "daniel-berger"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Tommy Fleetwood",
+        "Shane Lowry",
+        "Cameron Smith",
+        "Jason Day",
+        "Daniel Berger"
+      ],
+      "totalSalary": 49.699999999999996,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "derek-peppler-3",
+      "owner": "Derek Peppler",
+      "entryNum": 3,
+      "displayName": "Derek Peppler #3",
+      "roster": [
+        "scottie-scheffler",
+        "rory-mcilroy",
+        "adam-scott",
+        "ryan-fox",
+        "rasmus-hojgaard",
+        "matthew-jordan"
+      ],
+      "rosterNames": [
+        "Scottie Scheffler",
+        "Rory McIlroy",
+        "Adam Scott",
+        "Ryan Fox",
+        "Rasmus Hojgaard",
+        "Matthew Jordan"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "mike-powers-1",
+      "owner": "Mike Powers",
+      "entryNum": 1,
+      "displayName": "Mike Powers",
+      "roster": [
+        "matt-fitzpatrick",
+        "jon-rahm",
+        "chris-gotterup",
+        "robert-macintyre",
+        "sam-burns",
+        "john-keefer"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Jon Rahm",
+        "Chris Gotterup",
+        "Robert MacIntyre",
+        "Sam Burns",
+        "John Keefer"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "brandon-pritzl-1",
+      "owner": "Brandon Pritzl",
+      "entryNum": 1,
+      "displayName": "Brandon Pritzl",
+      "roster": [
+        "rory-mcilroy",
+        "matt-fitzpatrick",
+        "tyrrell-hatton",
+        "jordan-spieth",
+        "tom-kim",
+        "baard-bjoernevik-skogen"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Matt Fitzpatrick",
+        "Tyrrell Hatton",
+        "Jordan Spieth",
+        "Tom Kim",
+        "Baard Bjoernevik Skogen"
+      ],
+      "totalSalary": 49.8,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "garitt-pritzl-1",
+      "owner": "Garitt Pritzl",
+      "entryNum": 1,
+      "displayName": "Garitt Pritzl",
+      "roster": [
+        "scottie-scheffler",
+        "rory-mcilroy",
+        "rickie-fowler",
+        "sahith-theegala",
+        "j-t-poston",
+        "alex-smalley"
+      ],
+      "rosterNames": [
+        "Scottie Scheffler",
+        "Rory McIlroy",
+        "Rickie Fowler",
+        "Sahith Theegala",
+        "J.T. Poston",
+        "Alex Smalley"
+      ],
+      "totalSalary": 50.00000000000001,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "mike-pritzl-1",
+      "owner": "Mike Pritzl",
+      "entryNum": 1,
+      "displayName": "Mike Pritzl",
+      "roster": [
+        "rory-mcilroy",
+        "xander-schauffele",
+        "justin-rose",
+        "nicolai-hojgaard",
+        "adam-scott",
+        "keith-mitchell"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Xander Schauffele",
+        "Justin Rose",
+        "Nicolai Hojgaard",
+        "Adam Scott",
+        "Keith Mitchell"
+      ],
+      "totalSalary": 50.00000000000001,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "james-puissant-1",
+      "owner": "James Puissant",
+      "entryNum": 1,
+      "displayName": "James Puissant #1",
+      "roster": [
+        "scottie-scheffler",
+        "robert-macintyre",
+        "shane-lowry",
+        "sam-burns",
+        "brian-harman",
+        "michael-brennan"
+      ],
+      "rosterNames": [
+        "Scottie Scheffler",
+        "Robert MacIntyre",
+        "Shane Lowry",
+        "Sam Burns",
+        "Brian Harman",
+        "Michael Brennan"
+      ],
+      "totalSalary": 49.5,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "james-puissant-2",
+      "owner": "James Puissant",
+      "entryNum": 2,
+      "displayName": "James Puissant #2",
+      "roster": [
+        "rory-mcilroy",
+        "jon-rahm",
+        "chris-gotterup",
+        "cameron-smith",
+        "tom-mckibbin",
+        "andrew-novak"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Jon Rahm",
+        "Chris Gotterup",
+        "Cameron Smith",
+        "Tom McKibbin",
+        "Andrew Novak"
+      ],
+      "totalSalary": 48.8,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "jason-ripley-1",
+      "owner": "Jason Ripley",
+      "entryNum": 1,
+      "displayName": "Jason Ripley #1",
+      "roster": [
+        "scottie-scheffler",
+        "ludvig-aberg",
+        "collin-morikawa",
+        "brian-harman",
+        "nicolai-hojgaard",
+        "padraig-harrington"
+      ],
+      "rosterNames": [
+        "Scottie Scheffler",
+        "Ludvig Aberg",
+        "Collin Morikawa",
+        "Brian Harman",
+        "Nicolai Hojgaard",
+        "Padraig Harrington"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "jason-ripley-2",
+      "owner": "Jason Ripley",
+      "entryNum": 2,
+      "displayName": "Jason Ripley #2",
+      "roster": [
+        "rory-mcilroy",
+        "matt-fitzpatrick",
+        "viktor-hovland",
+        "corey-conners",
+        "maverick-mcnealy",
+        "gary-woodland"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Matt Fitzpatrick",
+        "Viktor Hovland",
+        "Corey Conners",
+        "Maverick McNealy",
+        "Gary Woodland"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "brandon-rubens-1",
+      "owner": "Brandon Rubens",
+      "entryNum": 1,
+      "displayName": "Brandon Rubens",
+      "roster": [
+        "matt-fitzpatrick",
+        "justin-rose",
+        "collin-morikawa",
+        "justin-thomas",
+        "joaquin-niemann",
+        "jordan-spieth"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Justin Rose",
+        "Collin Morikawa",
+        "Justin Thomas",
+        "Joaquin Niemann",
+        "Jordan Spieth"
+      ],
+      "totalSalary": 49.8,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "brock-rubens-1",
+      "owner": "Brock Rubens",
+      "entryNum": 1,
+      "displayName": "Brock Rubens",
+      "roster": [
+        "matt-fitzpatrick",
+        "chris-gotterup",
+        "viktor-hovland",
+        "wyndham-clark",
+        "robert-macintyre",
+        "min-woo-lee"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Chris Gotterup",
+        "Viktor Hovland",
+        "Wyndham Clark",
+        "Robert MacIntyre",
+        "Min Woo Lee"
+      ],
+      "totalSalary": 49.9,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "randy-rubens-1",
+      "owner": "Randy Rubens",
+      "entryNum": 1,
+      "displayName": "Randy Rubens",
+      "roster": [
+        "tommy-fleetwood",
+        "jon-rahm",
+        "robert-macintyre",
+        "sam-burns",
+        "patrick-cantlay",
+        "max-homa"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Jon Rahm",
+        "Robert MacIntyre",
+        "Sam Burns",
+        "Patrick Cantlay",
+        "Max Homa"
+      ],
+      "totalSalary": 49.4,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "leila-schiegg-1",
+      "owner": "Leila Schiegg",
+      "entryNum": 1,
+      "displayName": "Leila Schiegg",
+      "roster": [
+        "rory-mcilroy",
+        "xander-schauffele",
+        "russell-henley",
+        "justin-thomas",
+        "jordan-spieth",
+        "nick-taylor"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Xander Schauffele",
+        "Russell Henley",
+        "Justin Thomas",
+        "Jordan Spieth",
+        "Nick Taylor"
+      ],
+      "totalSalary": 50.00000000000001,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "tony-schiegg-1",
+      "owner": "Tony Schiegg",
+      "entryNum": 1,
+      "displayName": "Tony Schiegg",
+      "roster": [
+        "tommy-fleetwood",
+        "matt-fitzpatrick",
+        "ludvig-aberg",
+        "russell-henley",
+        "alex-noren",
+        "jordan-l-smith"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Matt Fitzpatrick",
+        "Ludvig Aberg",
+        "Russell Henley",
+        "Alex Noren",
+        "Jordan L. Smith"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "chad-schmidt-1",
+      "owner": "Chad Schmidt",
+      "entryNum": 1,
+      "displayName": "Chad Schmidt",
+      "roster": [
+        "tommy-fleetwood",
+        "matt-fitzpatrick",
+        "wyndham-clark",
+        "russell-henley",
+        "patrick-cantlay",
+        "akshay-bhatia"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Matt Fitzpatrick",
+        "Wyndham Clark",
+        "Russell Henley",
+        "Patrick Cantlay",
+        "Akshay Bhatia"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "casey-shaw-1",
+      "owner": "Casey Shaw",
+      "entryNum": 1,
+      "displayName": "Casey Shaw",
+      "roster": [
+        "tommy-fleetwood",
+        "matt-fitzpatrick",
+        "viktor-hovland",
+        "sam-burns",
+        "ben-griffin",
+        "nicolai-hojgaard"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Matt Fitzpatrick",
+        "Viktor Hovland",
+        "Sam Burns",
+        "Ben Griffin",
+        "Nicolai Hojgaard"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "ryan-stanke-1",
+      "owner": "Ryan Stanke",
+      "entryNum": 1,
+      "displayName": "Ryan Stanke",
+      "roster": [
+        "matt-fitzpatrick",
+        "jon-rahm",
+        "viktor-hovland",
+        "wyndham-clark",
+        "si-woo-kim",
+        "min-woo-lee"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Jon Rahm",
+        "Viktor Hovland",
+        "Wyndham Clark",
+        "Si Woo Kim",
+        "Min Woo Lee"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "jon-susek-1",
+      "owner": "Jon Susek",
+      "entryNum": 1,
+      "displayName": "Jon Susek",
+      "roster": [
+        "rory-mcilroy",
+        "tommy-fleetwood",
+        "chris-gotterup",
+        "tom-kim",
+        "j-j-spaun",
+        "keita-nakajima"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Tommy Fleetwood",
+        "Chris Gotterup",
+        "Tom Kim",
+        "J.J. Spaun",
+        "Keita Nakajima"
+      ],
+      "totalSalary": 49.8,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "bill-trewhella-1",
+      "owner": "Bill Trewhella",
+      "entryNum": 1,
+      "displayName": "Bill Trewhella #1",
+      "roster": [
+        "matt-fitzpatrick",
+        "ludvig-aberg",
+        "chris-gotterup",
+        "robert-macintyre",
+        "jordan-spieth",
+        "tom-kim"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Ludvig Aberg",
+        "Chris Gotterup",
+        "Robert MacIntyre",
+        "Jordan Spieth",
+        "Tom Kim"
+      ],
+      "totalSalary": 49.8,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "bill-trewhella-2",
+      "owner": "Bill Trewhella",
+      "entryNum": 2,
+      "displayName": "Bill Trewhella #2",
+      "roster": [
+        "tommy-fleetwood",
+        "ludvig-aberg",
+        "chris-gotterup",
+        "robert-macintyre",
+        "min-woo-lee",
+        "tom-kim"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Ludvig Aberg",
+        "Chris Gotterup",
+        "Robert MacIntyre",
+        "Min Woo Lee",
+        "Tom Kim"
+      ],
+      "totalSalary": 49.99999999999999,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "mark-valleskey-1",
+      "owner": "Mark Valleskey",
+      "entryNum": 1,
+      "displayName": "Mark Valleskey #1",
+      "roster": [
+        "tommy-fleetwood",
+        "matt-fitzpatrick",
+        "chris-gotterup",
+        "jordan-spieth",
+        "patrick-reed",
+        "corey-conners"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Matt Fitzpatrick",
+        "Chris Gotterup",
+        "Jordan Spieth",
+        "Patrick Reed",
+        "Corey Conners"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "mark-valleskey-2",
+      "owner": "Mark Valleskey",
+      "entryNum": 2,
+      "displayName": "Mark Valleskey #2",
+      "roster": [
+        "rory-mcilroy",
+        "jon-rahm",
+        "justin-rose",
+        "tom-kim",
+        "kristoffer-reitan",
+        "john-keefer"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Jon Rahm",
+        "Justin Rose",
+        "Tom Kim",
+        "Kristoffer Reitan",
+        "John Keefer"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "mark-valleskey-3",
+      "owner": "Mark Valleskey",
+      "entryNum": 3,
+      "displayName": "Mark Valleskey #3",
+      "roster": [
+        "ludvig-aberg",
+        "justin-rose",
+        "wyndham-clark",
+        "shane-lowry",
+        "sam-burns",
+        "russell-henley"
+      ],
+      "rosterNames": [
+        "Ludvig Aberg",
+        "Justin Rose",
+        "Wyndham Clark",
+        "Shane Lowry",
+        "Sam Burns",
+        "Russell Henley"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "mark-valleskey-4",
+      "owner": "Mark Valleskey",
+      "entryNum": 4,
+      "displayName": "Mark Valleskey #4",
+      "roster": [
+        "matt-fitzpatrick",
+        "xander-schauffele",
+        "viktor-hovland",
+        "brooks-koepka",
+        "alex-fitzpatrick",
+        "min-woo-lee"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Xander Schauffele",
+        "Viktor Hovland",
+        "Brooks Koepka",
+        "Alex Fitzpatrick",
+        "Min Woo Lee"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "mark-valleskey-5",
+      "owner": "Mark Valleskey",
+      "entryNum": 5,
+      "displayName": "Mark Valleskey #5",
+      "roster": [
+        "tommy-fleetwood",
+        "jon-rahm",
+        "chris-gotterup",
+        "justin-thomas",
+        "patrick-reed",
+        "ben-griffin"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Jon Rahm",
+        "Chris Gotterup",
+        "Justin Thomas",
+        "Patrick Reed",
+        "Ben Griffin"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "joe-vande-burgt-1",
+      "owner": "Joe Vande Burgt",
+      "entryNum": 1,
+      "displayName": "Joe Vande Burgt",
+      "roster": [
+        "scottie-scheffler",
+        "collin-morikawa",
+        "joaquin-niemann",
+        "patrick-cantlay",
+        "hideki-matsuyama",
+        "ben-griffin"
+      ],
+      "rosterNames": [
+        "Scottie Scheffler",
+        "Collin Morikawa",
+        "Joaquin Niemann",
+        "Patrick Cantlay",
+        "Hideki Matsuyama",
+        "Ben Griffin"
+      ],
+      "totalSalary": 49.99999999999999,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "phil-vandewettering-1",
+      "owner": "Phil VandeWettering",
+      "entryNum": 1,
+      "displayName": "Phil VandeWettering #1",
+      "roster": [
+        "rory-mcilroy",
+        "xander-schauffele",
+        "justin-rose",
+        "hideki-matsuyama",
+        "ryan-gerard",
+        "nick-taylor"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Xander Schauffele",
+        "Justin Rose",
+        "Hideki Matsuyama",
+        "Ryan Gerard",
+        "Nick Taylor"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "phil-vandewettering-2",
+      "owner": "Phil VandeWettering",
+      "entryNum": 2,
+      "displayName": "Phil VandeWettering #2",
+      "roster": [
+        "rory-mcilroy",
+        "xander-schauffele",
+        "justin-rose",
+        "patrick-reed",
+        "matt-wallace",
+        "nick-taylor"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Xander Schauffele",
+        "Justin Rose",
+        "Patrick Reed",
+        "Matt Wallace",
+        "Nick Taylor"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "doug-vallade-1",
+      "owner": "Doug Vallade",
+      "entryNum": 1,
+      "displayName": "Doug Vallade",
+      "roster": [
+        "tommy-fleetwood",
+        "justin-rose",
+        "chris-gotterup",
+        "shane-lowry",
+        "justin-thomas",
+        "adam-scott"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Justin Rose",
+        "Chris Gotterup",
+        "Shane Lowry",
+        "Justin Thomas",
+        "Adam Scott"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "aaron-weier-1",
+      "owner": "Aaron Weier",
+      "entryNum": 1,
+      "displayName": "Aaron Weier #1",
+      "roster": [
+        "scottie-scheffler",
+        "rory-mcilroy",
+        "patrick-reed",
+        "ryan-gerard",
+        "stewart-cink",
+        "padraig-harrington"
+      ],
+      "rosterNames": [
+        "Scottie Scheffler",
+        "Rory McIlroy",
+        "Patrick Reed",
+        "Ryan Gerard",
+        "Stewart Cink",
+        "Padraig Harrington"
+      ],
+      "totalSalary": 49.6,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "aaron-weier-2",
+      "owner": "Aaron Weier",
+      "entryNum": 2,
+      "displayName": "Aaron Weier #2",
+      "roster": [
+        "matt-fitzpatrick",
+        "justin-rose",
+        "collin-morikawa",
+        "russell-henley",
+        "justin-thomas",
+        "si-woo-kim"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Justin Rose",
+        "Collin Morikawa",
+        "Russell Henley",
+        "Justin Thomas",
+        "Si Woo Kim"
+      ],
+      "totalSalary": 49.9,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "aaron-weier-3",
+      "owner": "Aaron Weier",
+      "entryNum": 3,
+      "displayName": "Aaron Weier #3",
+      "roster": [
+        "tommy-fleetwood",
+        "jon-rahm",
+        "chris-gotterup",
+        "robert-macintyre",
+        "jordan-l-smith",
+        "john-keefer"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Jon Rahm",
+        "Chris Gotterup",
+        "Robert MacIntyre",
+        "Jordan L. Smith",
+        "John Keefer"
+      ],
+      "totalSalary": 48.800000000000004,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "trent-willihnganz-1",
+      "owner": "Trent Willihnganz",
+      "entryNum": 1,
+      "displayName": "Trent Willihnganz #1",
+      "roster": [
+        "rory-mcilroy",
+        "tommy-fleetwood",
+        "shane-lowry",
+        "alex-fitzpatrick",
+        "daniel-berger",
+        "andrew-novak"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Tommy Fleetwood",
+        "Shane Lowry",
+        "Alex Fitzpatrick",
+        "Daniel Berger",
+        "Andrew Novak"
+      ],
+      "totalSalary": 49.8,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "trent-willihnganz-2",
+      "owner": "Trent Willihnganz",
+      "entryNum": 2,
+      "displayName": "Trent Willihnganz #2",
+      "roster": [
+        "xander-schauffele",
+        "ludvig-aberg",
+        "collin-morikawa",
+        "sam-burns",
+        "aaron-rai",
+        "ben-griffin"
+      ],
+      "rosterNames": [
+        "Xander Schauffele",
+        "Ludvig Aberg",
+        "Collin Morikawa",
+        "Sam Burns",
+        "Aaron Rai",
+        "Ben Griffin"
+      ],
+      "totalSalary": 49.5,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "brandon-winters-1",
+      "owner": "Brandon Winters",
+      "entryNum": 1,
+      "displayName": "Brandon Winters",
+      "roster": [
+        "rory-mcilroy",
+        "matt-fitzpatrick",
+        "chris-gotterup",
+        "si-woo-kim",
+        "tom-kim",
+        "nick-taylor"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Matt Fitzpatrick",
+        "Chris Gotterup",
+        "Si Woo Kim",
+        "Tom Kim",
+        "Nick Taylor"
+      ],
+      "totalSalary": 49.99999999999999,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "eric-witczak-1",
+      "owner": "Eric Witczak",
+      "entryNum": 1,
+      "displayName": "Eric Witczak #1",
+      "roster": [
+        "matt-fitzpatrick",
+        "tyrrell-hatton",
+        "collin-morikawa",
+        "robert-macintyre",
+        "russell-henley",
+        "maverick-mcnealy"
+      ],
+      "rosterNames": [
+        "Matt Fitzpatrick",
+        "Tyrrell Hatton",
+        "Collin Morikawa",
+        "Robert MacIntyre",
+        "Russell Henley",
+        "Maverick McNealy"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "eric-witczak-2",
+      "owner": "Eric Witczak",
+      "entryNum": 2,
+      "displayName": "Eric Witczak #2",
+      "roster": [
+        "tommy-fleetwood",
+        "jon-rahm",
+        "chris-gotterup",
+        "robert-macintyre",
+        "maverick-mcnealy",
+        "nicolai-hojgaard"
+      ],
+      "rosterNames": [
+        "Tommy Fleetwood",
+        "Jon Rahm",
+        "Chris Gotterup",
+        "Robert MacIntyre",
+        "Maverick McNealy",
+        "Nicolai Hojgaard"
+      ],
+      "totalSalary": 50.00000000000001,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "eric-witczak-3",
+      "owner": "Eric Witczak",
+      "entryNum": 3,
+      "displayName": "Eric Witczak #3",
+      "roster": [
+        "rory-mcilroy",
+        "matt-fitzpatrick",
+        "viktor-hovland",
+        "min-woo-lee",
+        "si-woo-kim",
+        "john-keefer"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Matt Fitzpatrick",
+        "Viktor Hovland",
+        "Min Woo Lee",
+        "Si Woo Kim",
+        "John Keefer"
+      ],
+      "totalSalary": 50,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "colin-yarger-1",
+      "owner": "Colin Yarger",
+      "entryNum": 1,
+      "displayName": "Colin Yarger #1",
+      "roster": [
+        "jon-rahm",
+        "collin-morikawa",
+        "chris-gotterup",
+        "viktor-hovland",
+        "wyndham-clark",
+        "akshay-bhatia"
+      ],
+      "rosterNames": [
+        "Jon Rahm",
+        "Collin Morikawa",
+        "Chris Gotterup",
+        "Viktor Hovland",
+        "Wyndham Clark",
+        "Akshay Bhatia"
+      ],
+      "totalSalary": 50.00000000000001,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "colin-yarger-2",
+      "owner": "Colin Yarger",
+      "entryNum": 2,
+      "displayName": "Colin Yarger #2",
+      "roster": [
+        "rory-mcilroy",
+        "matt-fitzpatrick",
+        "robert-macintyre",
+        "patrick-cantlay",
+        "tom-kim",
+        "sungjae-im"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Matt Fitzpatrick",
+        "Robert MacIntyre",
+        "Patrick Cantlay",
+        "Tom Kim",
+        "Sungjae Im"
+      ],
+      "totalSalary": 49.9,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "mike-yarger-1",
+      "owner": "Mike Yarger",
+      "entryNum": 1,
+      "displayName": "Mike Yarger #1",
+      "roster": [
+        "justin-rose",
+        "tyrrell-hatton",
+        "viktor-hovland",
+        "robert-macintyre",
+        "shane-lowry",
+        "russell-henley"
+      ],
+      "rosterNames": [
+        "Justin Rose",
+        "Tyrrell Hatton",
+        "Viktor Hovland",
+        "Robert MacIntyre",
+        "Shane Lowry",
+        "Russell Henley"
+      ],
+      "totalSalary": 49.9,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "mike-yarger-2",
+      "owner": "Mike Yarger",
+      "entryNum": 2,
+      "displayName": "Mike Yarger #2",
+      "roster": [
+        "rory-mcilroy",
+        "matt-fitzpatrick",
+        "ludvig-aberg",
+        "nicolai-hojgaard",
+        "rasmus-hojgaard",
+        "nick-taylor"
+      ],
+      "rosterNames": [
+        "Rory McIlroy",
+        "Matt Fitzpatrick",
+        "Ludvig Aberg",
+        "Nicolai Hojgaard",
+        "Rasmus Hojgaard",
+        "Nick Taylor"
+      ],
+      "totalSalary": 49.99999999999999,
+      "paid": true,
+      "status": "active"
+    },
+    {
+      "id": "mike-yarger-3",
+      "owner": "Mike Yarger",
+      "entryNum": 3,
+      "displayName": "Mike Yarger #3",
+      "roster": [
+        "scottie-scheffler",
+        "tommy-fleetwood",
+        "brooks-koepka",
+        "joaquin-niemann",
+        "bernd-wiesberger",
+        "nicolas-echavarria"
+      ],
+      "rosterNames": [
+        "Scottie Scheffler",
+        "Tommy Fleetwood",
+        "Brooks Koepka",
+        "Joaquin Niemann",
+        "Bernd Wiesberger",
+        "Nicolas Echavarria"
+      ],
+      "totalSalary": 49.99999999999999,
+      "paid": true,
+      "status": "active"
+    }
+  ],
+  "prizes": [
+    {
+      "rank": 1,
+      "amount": 715
+    },
+    {
+      "rank": 2,
+      "amount": 485
+    },
+    {
+      "rank": 3,
+      "amount": 355
+    },
+    {
+      "rank": 4,
+      "amount": 255
+    },
+    {
+      "rank": 5,
+      "amount": 215
+    },
+    {
+      "rank": 6,
+      "amount": 165
+    },
+    {
+      "rank": 7,
+      "amount": 125
+    },
+    {
+      "rank": 8,
+      "amount": 100
+    },
+    {
+      "rank": 9,
+      "amount": 75
+    },
+    {
+      "rank": 10,
+      "amount": 50
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "PowerShell(& \"C:\\\\Users\\\\Jordan\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-Jordan-dev-golf-pool\\\\1f5f8315-ff2d-46cd-9c80-ec31d5827a09\\\\scratchpad\\\\extract.ps1\")"
+    ]
+  }
+}
