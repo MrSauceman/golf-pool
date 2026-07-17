@@ -223,9 +223,23 @@ function importWorkbook(path) {
   return state;
 }
 
-const state = importWorkbook(xlsxPath());
+const wbPath = xlsxPath();
 const outDir = join(ROOT, 'web', 'public');
-if (!existsSync(outDir)) mkdirSync(outDir, { recursive: true });
 const outPath = join(outDir, 'data.json');
+
+// The workbook is kept out of the (public) repo, so CI has no .xlsx to parse and
+// builds from the committed data.json instead. Only regenerate when the workbook
+// is actually present locally.
+if (!existsSync(wbPath)) {
+  if (existsSync(outPath)) {
+    console.warn(`[generate-data] workbook not found — using committed ${outPath}`);
+    process.exit(0);
+  }
+  console.error(`[generate-data] workbook not found (${wbPath}) and no existing data.json — cannot build.`);
+  process.exit(1);
+}
+
+const state = importWorkbook(wbPath);
+if (!existsSync(outDir)) mkdirSync(outDir, { recursive: true });
 writeFileSync(outPath, JSON.stringify(state, null, 2));
 console.log(`[generate-data] wrote ${outPath}`);
