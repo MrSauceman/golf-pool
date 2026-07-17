@@ -129,11 +129,11 @@ export async function syncFromEspn(
       const hasOut = ls.outScore !== null && ls.outScore !== undefined && frontDone;
       const hasIn = ls.inScore !== null && ls.inScore !== undefined && backDone;
 
-      const prevF9 = existing ? existing.f9 : null;
-      const prevB9 = existing ? existing.b9 : null;
-      const f9 = hasOut ? ls.outScore - parFront : prevF9;
-      const b9 = hasIn ? ls.inScore - parBack : prevB9;
-      if (f9 === null && b9 === null) continue;
+      // An incomplete nine has no valid score — write null, never a stale/partial
+      // value. (Retaining a previous value could preserve pre-fix garbage from a
+      // cached snapshot.) Overwrite each sync so bad cached data self-heals.
+      const f9 = hasOut ? ls.outScore - parFront : null;
+      const b9 = hasIn ? ls.inScore - parBack : null;
       state.golfers[g.id].scores[p] = { f9, b9, source: 'espn', manual: false };
       updated++;
     }

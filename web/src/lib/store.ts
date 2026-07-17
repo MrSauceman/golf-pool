@@ -5,7 +5,11 @@
 import type { PoolState, PoolGolfer } from './scoring';
 import { syncFromEspn, type SyncResult } from './espn';
 
-const SNAP_KEY = 'gp-live-snapshot';
+// Bump the version suffix whenever a sync/scoring change could make older cached
+// snapshots wrong — it makes every browser discard its stale snapshot on next load.
+// (v2: fixes partial-nine scores that were cached as huge negatives.)
+const SNAP_KEY = 'gp-live-snapshot-v2';
+const OLD_SNAP_KEYS = ['gp-live-snapshot'];
 // Resolve data.json against the document's actual base URL so it works whether the
 // site is served from a domain root or a GitHub Pages subpath (…/golf-pool/).
 const DATA_URL = new URL('data.json', document.baseURI).toString();
@@ -70,6 +74,11 @@ function applySnapshot(base: PoolState, snap: Snapshot): void {
 }
 
 async function loadInitial(): Promise<PoolState> {
+  try {
+    for (const k of OLD_SNAP_KEYS) localStorage.removeItem(k);
+  } catch {
+    /* ignore */
+  }
   let base: PoolState | null = null;
   try {
     const res = await fetch(DATA_URL, { cache: 'no-cache' });
