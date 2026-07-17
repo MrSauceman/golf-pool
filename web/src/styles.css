@@ -310,11 +310,11 @@ html { color-scheme: light dark; }
 :root[data-theme="dark"] table.rd tbody tr.row-cut:hover,
 :root[data-theme="dark"] table.roster tbody tr.row-cut:hover,
 :root[data-theme="dark"] .golfers-table tbody tr.row-cut:hover { background: #24303a; }
-table.rd tbody tr:hover { background: #f5f9ff; }
-table.roster tbody tr:hover { background: #f5f9ff; }
+table.rd tbody tr:hover,
+table.roster tbody tr:hover,
 .golfers-table tbody tr:hover { background: #f5f9ff; }
-table.rd tbody tr.row-cut:hover { background: #efefef; }
-table.roster tbody tr.row-cut:hover { background: #efefef; }
+table.rd tbody tr.row-cut:hover,
+table.roster tbody tr.row-cut:hover,
 .golfers-table tbody tr.row-cut:hover { background: #efefef; }
 
 /* ---------- header icons + sync health ---------- */
