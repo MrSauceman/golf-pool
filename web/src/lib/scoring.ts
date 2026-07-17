@@ -1,33 +1,107 @@
-// Pool scoring engine.
+// Pool scoring engine (client-side port of the old server/src/scoring.js).
 //  Daily team score = (sum of best 3 front-9 to-par) + (sum of best 3 back-9 to-par)
 //  Team total       = sum of daily scores across played rounds (lower is better)
 //  Cut rule         = need >= 3 golfers through the cut, else eliminated
 //  Tiebreak         = Sunday back 9, then Sunday front 9, then backwards through the rounds
+import type {
+  Meta,
+  Prize,
+  LeaderRow,
+  TeamDetail,
+  TeamRound,
+  TeamRoundRow,
+  CutProjection,
+} from './types';
 
-function sumBest3(rows, key) {
+// ---- internal pool state (the shape of data.json) ----
+export interface PoolRoundScore {
+  f9: number | null;
+  b9: number | null;
+  source: string;
+  manual: boolean;
+}
+
+export interface PoolGolfer {
+  id: string;
+  name: string;
+  salary: number;
+  scores: Record<string, PoolRoundScore>;
+  cut: string; // active | cut | wd
+  position: string | null;
+  thru: number | null;
+  teeTime?: string | null;
+  today: string | null;
+  totalToPar: string | number | null;
+  toPar?: number | null;
+  roundState?: string | null;
+  startHole?: number | null;
+  totalStrokes?: number | null;
+  ownedBy?: number;
+  ownedPct?: number;
+}
+
+export type RosterSlot = string | { unmatched: string };
+
+export interface PoolTeam {
+  id: string;
+  owner: string;
+  entryNum: number;
+  displayName: string;
+  roster: RosterSlot[];
+  rosterNames?: string[];
+  totalSalary: number;
+  paid: boolean;
+  status?: string;
+}
+
+export interface PoolState {
+  meta: Meta;
+  golfers: Record<string, PoolGolfer>;
+  teams: PoolTeam[];
+  prizes: Prize[];
+}
+
+// computeTeam yields a TeamDetail; buildLeaderboard augments it with ranking fields.
+export interface RankedTeam extends TeamDetail {
+  order: number;
+  position: number | null;
+  positionDisplay: string;
+  isTie: boolean;
+  paidRank: number | null;
+  projectedPrize: number | null;
+  prevPosition: number | null;
+  movement: number | null;
+  tiebreak: number[];
+}
+
+function sumBest3(rows: TeamRoundRow[], key: 'f9' | 'b9') {
   const withVal = rows.filter((r) => r[key] !== null && r[key] !== undefined);
-  withVal.sort((a, b) => a[key] - b[key]);
+  withVal.sort((a, b) => (a[key] as number) - (b[key] as number));
   const chosen = withVal.slice(0, 3);
   return {
-    sum: chosen.reduce((acc, r) => acc + r[key], 0),
+    sum: chosen.reduce((acc, r) => acc + (r[key] as number), 0),
     chosenIds: new Set(chosen.map((r) => r.golferId)),
     available: withVal.length,
   };
 }
 
 /** Top-70-and-ties cut line, as a to-par number, from live golfer to-par. */
-export function computeCutLine(golferMap) {
+export function computeCutLine(golferMap: Record<string, PoolGolfer>): number | null {
   const scores = Object.values(golferMap)
     .filter((g) => g.cut !== 'wd' && typeof g.toPar === 'number')
-    .map((g) => g.toPar)
+    .map((g) => g.toPar as number)
     .sort((a, b) => a - b);
   if (scores.length === 0) return null;
   return scores[Math.min(69, scores.length - 1)];
 }
 
-export function computeTeamRound(golfers, round, meta = {}) {
-  const rows = golfers.map((g) => {
-    const s = (g.scores && g.scores[round]) || null;
+export function computeTeamRound(
+  golfers: PoolGolfer[],
+  round: number,
+  meta: Partial<Meta> = {}
+): TeamRound {
+  const rows: TeamRoundRow[] = golfers.map((g) => {
+    const s = (g.scores && g.scores[String(round)]) || null;
     return {
       golferId: g.id,
       name: g.name,
@@ -67,20 +141,25 @@ export function computeTeamRound(golfers, round, meta = {}) {
   };
 }
 
-export function computeTeam(team, golferMap, meta = {}, cutLine = null) {
+export function computeTeam(
+  team: PoolTeam,
+  golferMap: Record<string, PoolGolfer>,
+  meta: Partial<Meta> = {},
+  cutLine: number | null = null
+): TeamDetail {
   const golfers = team.roster
     .map((slot) => (typeof slot === 'string' ? golferMap[slot] : null))
-    .filter(Boolean);
-  const unmatched = team.roster.filter((s) => s && typeof s === 'object');
+    .filter(Boolean) as PoolGolfer[];
+  const unmatched = team.roster.filter((s) => s && typeof s === 'object') as { unmatched: string }[];
 
   const rounds = [1, 2, 3, 4].map((r) => computeTeamRound(golfers, r, meta));
   const playedRounds = rounds.filter((r) => r.played);
-  const total = playedRounds.reduce((acc, r) => acc + r.daily, 0);
+  const total = playedRounds.reduce((acc, r) => acc + (r.daily as number), 0);
 
   const curr = meta.currentRound || 1;
   const prevTotal = rounds
     .filter((r) => r.round < curr && r.played)
-    .reduce((acc, r) => acc + r.daily, 0);
+    .reduce((acc, r) => acc + (r.daily as number), 0);
 
   const cutMade = golfers.filter((g) => g.cut !== 'cut' && g.cut !== 'wd').length;
   const eliminated = !!meta.cutApplied && cutMade < 3;
@@ -89,7 +168,7 @@ export function computeTeam(team, golferMap, meta = {}, cutLine = null) {
   const cutProjectedMade =
     cutLine === null
       ? cutMade
-      : golfers.filter((g) => typeof g.toPar === 'number' && g.toPar <= cutLine).length;
+      : golfers.filter((g) => typeof g.toPar === 'number' && (g.toPar as number) <= cutLine).length;
 
   return {
     id: team.id,
@@ -99,10 +178,19 @@ export function computeTeam(team, golferMap, meta = {}, cutLine = null) {
     totalSalary: team.totalSalary,
     paid: team.paid,
     golfers: golfers.map((g) => ({
-      id: g.id, name: g.name, salary: g.salary, cut: g.cut,
-      position: g.position, thru: g.thru, teeTime: g.teeTime, roundState: g.roundState,
-      today: g.today, totalToPar: g.totalToPar, toPar: g.toPar ?? null,
-      cutProjected: cutLine !== null && typeof g.toPar === 'number' ? g.toPar <= cutLine : null,
+      id: g.id,
+      name: g.name,
+      salary: g.salary,
+      cut: g.cut,
+      position: g.position,
+      thru: g.thru,
+      teeTime: g.teeTime ?? null,
+      roundState: g.roundState ?? null,
+      today: g.today,
+      totalToPar: g.totalToPar,
+      toPar: g.toPar ?? null,
+      cutProjected:
+        cutLine !== null && typeof g.toPar === 'number' ? (g.toPar as number) <= cutLine : null,
     })),
     unmatched,
     rounds,
@@ -114,14 +202,15 @@ export function computeTeam(team, golferMap, meta = {}, cutLine = null) {
     playedCount: playedRounds.length,
     cutMade,
     cutProjectedMade,
-    cutAtRisk: !eliminated && meta.currentRound >= 2 && cutProjectedMade < 3,
+    cutAtRisk: !eliminated && (meta.currentRound || 1) >= 2 && cutProjectedMade < 3,
     eliminated,
     status: eliminated ? 'eliminated' : 'active',
   };
 }
 
-function tiebreakVector(t) {
-  const nine = (i, key) => (t.rounds[i] && t.rounds[i][key] !== null ? t.rounds[i][key] : 0);
+function tiebreakVector(t: TeamDetail): number[] {
+  const nine = (i: number, key: 'f9Sum' | 'b9Sum') =>
+    t.rounds[i] && t.rounds[i][key] !== null ? (t.rounds[i][key] as number) : 0;
   return [
     nine(3, 'b9Sum'), nine(3, 'f9Sum'),
     nine(2, 'b9Sum'), nine(2, 'f9Sum'),
@@ -130,10 +219,21 @@ function tiebreakVector(t) {
   ];
 }
 
-export function buildLeaderboard(state) {
-  const meta = state.meta || {};
+export function buildLeaderboard(state: PoolState): RankedTeam[] {
+  const meta = state.meta || ({} as Meta);
   const cutLine = computeCutLine(state.golfers);
-  const teams = state.teams.map((t) => computeTeam(t, state.golfers, meta, cutLine));
+  const teams: RankedTeam[] = state.teams.map((t) => ({
+    ...computeTeam(t, state.golfers, meta, cutLine),
+    order: 0,
+    position: null,
+    positionDisplay: '',
+    isTie: false,
+    paidRank: null,
+    projectedPrize: null,
+    prevPosition: null,
+    movement: null,
+    tiebreak: [],
+  }));
 
   teams.sort((a, b) => {
     if (a.eliminated !== b.eliminated) return a.eliminated ? 1 : -1;
@@ -168,12 +268,8 @@ export function buildLeaderboard(state) {
     for (const t of active) {
       const better = active.filter((o) => o.prevTotal < t.prevTotal).length;
       t.prevPosition = better + 1;
-      t.movement = t.prevPosition - t.position;
+      t.movement = t.prevPosition - (t.position as number);
     }
-  }
-  for (const t of teams) {
-    if (t.movement === undefined) t.movement = null;
-    if (t.prevPosition === undefined) t.prevPosition = null;
   }
 
   // Projected prize by tiebreak-resolved order.
@@ -186,8 +282,8 @@ export function buildLeaderboard(state) {
   return teams;
 }
 
-export function cutProjection(state) {
-  const meta = state.meta || {};
+export function cutProjection(state: PoolState): CutProjection {
+  const meta = state.meta || ({} as Meta);
   const line = computeCutLine(state.golfers);
   const applies = (meta.currentRound || 1) >= 2 && line !== null;
   return {
@@ -198,7 +294,7 @@ export function cutProjection(state) {
   };
 }
 
-export function leaderboardSummary(state) {
+export function leaderboardSummary(state: PoolState): LeaderRow[] {
   return buildLeaderboard(state).map((t) => ({
     id: t.id,
     order: t.order,

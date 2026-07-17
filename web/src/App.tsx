@@ -57,11 +57,27 @@ export default function App() {
     }
   }, []);
 
+  // Sync ESPN in the browser, then refresh meta and nudge every page to recompute.
+  // (This is the job the Express server used to do on a timer.)
   useEffect(() => {
-    loadMeta();
-    const iv = setInterval(loadMeta, 30000);
-    return () => clearInterval(iv);
-  }, [loadMeta, tick]);
+    let alive = true;
+    const tickSync = async () => {
+      try {
+        await api.sync();
+      } catch {
+        /* offline — pages keep showing the last cached scores */
+      }
+      if (!alive) return;
+      await loadMeta();
+      setTick((t) => t + 1);
+    };
+    tickSync();
+    const iv = setInterval(tickSync, 60000);
+    return () => {
+      alive = false;
+      clearInterval(iv);
+    };
+  }, [loadMeta]);
 
   const onSync = useCallback(async () => {
     setSyncing(true);

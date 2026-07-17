@@ -352,7 +352,7 @@ html { color-scheme: light dark; }
 .cut-banner:not(.has-risk) .cut-risk { color: var(--green); }
 
 /* ---------- money line ---------- */
-.col-prize { color: var(--green); font-weight: 700; font-size: 13px; }
+td.col-prize { color: var(--green); font-weight: 700; font-size: 13px; }
 tr.moneyline td { text-align: center; padding: 5px; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--dim); background: repeating-linear-gradient(90deg, transparent, transparent 6px, var(--line) 6px, var(--line) 12px); background-clip: padding-box; }
 tr.moneyline td { border-bottom: 2px solid var(--gold); background: var(--green-bg); }
 .lb-row.at-risk { box-shadow: inset 3px 0 0 var(--under); }
@@ -429,18 +429,77 @@ table.roster td.rd-golfer { text-align: left; font-weight: 500; }
 .kiosk .mv-down { color: #ff8d99; }
 
 /* ---------- responsive ---------- */
+/* Tablet: 2-up KPIs, single-column grids, nav wraps under the brand. */
 @media (max-width: 820px) {
   .kpis { grid-template-columns: repeat(2, 1fr); }
   .rounds { grid-template-columns: 1fr; }
   .info-grid { grid-template-columns: 1fr; }
+  .insights { grid-template-columns: 1fr; }
   .mainnav { order: 3; width: 100%; margin-left: 0; }
   .sync { margin-left: auto; }
   .team-header { flex-direction: column; }
   .team-head-score { text-align: left; }
   .team-daily-strip { justify-content: flex-start; }
 }
-@media (max-width: 520px) {
-  .kpis { grid-template-columns: 1fr 1fr; }
+
+/* Phone: stack the header, enlarge tap targets, and slim tables to what matters. */
+@media (max-width: 600px) {
+  body { font-size: 14px; }
+  .page { padding: 14px 12px 32px; }
+
+  /* Header: brand row, full-width nav tabs, sync controls on their own row */
+  .topbar-inner { padding: 8px 12px; gap: 10px; }
   .brand-title { font-size: 14px; }
-  .col-salary, thead th:last-child { display: none; }
+  .brand-sub { font-size: 11px; }
+  .mainnav { order: 2; width: 100%; margin-left: 0; gap: 4px; }
+  .mainnav button { flex: 1; padding: 10px 6px; font-size: 13px; text-align: center; min-height: 42px; }
+  .sync { order: 3; width: 100%; margin-left: 0; justify-content: space-between; gap: 8px; }
+  .sync-meta { align-items: flex-start; }
+  .sync-time { font-size: 10px; }
+
+  /* KPI strip stays 2×2, tighter */
+  .kpis { grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+  .kpi { padding: 10px 12px; }
+  .kpi-value { font-size: 17px; }
+
+  /* Toolbar controls go full width */
+  .toolbar { gap: 8px; }
+  .search { max-width: none; min-width: 0; width: 100%; }
+  .segmented { width: 100%; }
+  .segmented button { flex: 1; min-height: 40px; }
+
+  /* Leaderboard keeps star / pos / team / total / cut; drops Δ, rounds, and $ */
+  .leaderboard-table .col-mv,
+  .leaderboard-table .col-rd,
+  .leaderboard-table .col-prize { display: none; }
+  table.lb thead th, table.lb tbody td { padding: 9px 6px; }
+  .col-team { min-width: 0; }
+  .col-pos { width: 42px; }
+
+  /* Golfers table: drop the per-round F/B breakdown so it fits the viewport */
+  .golfers-table .rnd-col,
+  .golfers-table .fb-cell { display: none; }
+
+  /* Team + owner headers scale down */
+  .team-title { font-size: 20px; }
+  .team-total { font-size: 34px; }
+  .owner-title { font-size: 22px; }
+  .owner-header { padding: 16px; }
+  .owner-stats { gap: 16px; width: 100%; justify-content: space-between; }
+
+  /* Comfortable tap targets */
+  .star { font-size: 20px; padding: 6px; }
+  .icon-btn { width: 38px; height: 38px; }
+  .btn-sync { padding: 9px 14px; }
+
+  /* Kiosk/TV mode stays legible if opened on a phone (vw units are tiny there) */
+  .kiosk-title { font-size: 18px; }
+  .kiosk-sub { font-size: 12px; }
+  .kiosk-page { font-size: 13px; }
+  .kiosk-upd, .kiosk-exit { font-size: 11px; }
+  .kiosk-table th { font-size: 10px; }
+  .kiosk-table td { font-size: 14px; }
+  .kiosk-table .k-owner { font-size: 11px; }
+  .kiosk-table .k-prize { font-size: 13px; }
+  .kiosk-table .k-pos { width: 40px; }
 }

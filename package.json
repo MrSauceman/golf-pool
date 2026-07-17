@@ -1,16 +1,17 @@
 {
   "name": "golf-pool",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "Open Championship 2026 golf pool tracker - live leaderboard & team drill-down",
+  "type": "module",
+  "description": "The Open Championship 2026 golf pool tracker — static site with client-side scoring & live ESPN sync",
   "scripts": {
-    "postinstall": "npm --prefix server install && npm --prefix web install",
-    "import": "npm --prefix server run import",
-    "dev": "concurrently -n api,web -c green,cyan \"npm --prefix server run dev\" \"npm --prefix web run dev\"",
-    "build": "npm --prefix web run build",
-    "start": "npm --prefix server run start"
+    "generate-data": "node scripts/generate-data.js",
+    "dev": "npm run generate-data && npm --prefix web run dev",
+    "build": "npm run generate-data && npm --prefix web run build",
+    "preview": "npm --prefix web run preview",
+    "postinstall": "npm --prefix web install"
   },
   "devDependencies": {
-    "concurrently": "^9.1.0"
+    "xlsx": "^0.18.5"
   }
 }

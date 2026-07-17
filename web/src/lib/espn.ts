@@ -1,11 +1,27 @@
-// Live score sync from ESPN's free golf leaderboard feed.
+// Live score sync from ESPN's free golf leaderboard feed (runs in the browser).
 //  linescores[].outScore = front-9 strokes, inScore = back-9 strokes.
 //  to-par per nine = strokes - par (front 34 / back 36 at Royal Birkdale).
-import { fold, aliasFor } from './names.js';
+// ESPN's site.api.espn.com sends `Access-Control-Allow-Origin: *`, so the fetch
+// works directly from a static site with no proxy.
+import { fold, aliasFor } from './names';
+import type { PoolState } from './scoring';
 
 const LEADERBOARD_URL = 'https://site.api.espn.com/apis/site/v2/sports/golf/leaderboard';
 
-function toParNum(displayValue) {
+export interface SyncResult {
+  ok: boolean;
+  reason?: string;
+  matched?: number;
+  updated?: number;
+  unmatchedCount?: number;
+  unmatched?: string[];
+  currentRound?: number;
+  eventState?: string | null;
+  cutApplied?: boolean;
+  eventStatus?: string | null;
+}
+
+function toParNum(displayValue: unknown): number | null {
   if (displayValue == null) return null;
   const s = String(displayValue).trim().toUpperCase();
   if (s === 'E') return 0;
@@ -13,19 +29,22 @@ function toParNum(displayValue) {
   return Number.isFinite(n) ? n : null;
 }
 
-export async function fetchOpenCompetition() {
+export async function fetchOpenCompetition(): Promise<{ event: any; competition: any } | null> {
   const res = await fetch(LEADERBOARD_URL, { headers: { accept: 'application/json' } });
   if (!res.ok) throw new Error(`ESPN request failed: ${res.status}`);
   const data = await res.json();
   const events = data.events || [];
   const ev =
-    events.find((e) => e.name === 'The Open') ||
-    events.find((e) => /\bopen\b/i.test(e.name) && !/puntacana|corales/i.test(e.name));
+    events.find((e: any) => e.name === 'The Open') ||
+    events.find((e: any) => /\bopen\b/i.test(e.name) && !/puntacana|corales/i.test(e.name));
   if (!ev) return null;
   return { event: ev, competition: (ev.competitions || [])[0] || null };
 }
 
-export async function syncFromEspn(state, opts = {}) {
+export async function syncFromEspn(
+  state: PoolState,
+  opts: { parFront?: number; parBack?: number } = {}
+): Promise<SyncResult> {
   const parFront = opts.parFront ?? state.meta.parFront ?? 34;
   const parBack = opts.parBack ?? state.meta.parBack ?? 36;
   const lockedRounds = new Set(state.meta.lockedRounds || []);
@@ -37,7 +56,7 @@ export async function syncFromEspn(state, opts = {}) {
   const evStatus = found.event.status || {};
   const compStatus = comp.status || {};
 
-  const idx = new Map();
+  const idx = new Map<string, any>();
   for (const c of comp.competitors || []) {
     const nm = c.athlete && c.athlete.displayName;
     if (nm) idx.set(fold(nm), c);
@@ -46,7 +65,7 @@ export async function syncFromEspn(state, opts = {}) {
   let matched = 0;
   let updated = 0;
   let anyCut = false;
-  const unmatched = [];
+  const unmatched: string[] = [];
 
   for (const g of Object.values(state.golfers)) {
     const c = idx.get(aliasFor(fold(g.name)));
@@ -92,8 +111,8 @@ export async function syncFromEspn(state, opts = {}) {
       const hasIn = ls.inScore !== null && ls.inScore !== undefined;
       if (!hasOut && !hasIn) continue;
 
-      const f9 = hasOut ? ls.outScore - parFront : (existing ? existing.f9 : null);
-      const b9 = hasIn ? ls.inScore - parBack : (existing ? existing.b9 : null);
+      const f9 = hasOut ? ls.outScore - parFront : existing ? existing.f9 : null;
+      const b9 = hasIn ? ls.inScore - parBack : existing ? existing.b9 : null;
       state.golfers[g.id].scores[p] = { f9, b9, source: 'espn', manual: false };
       updated++;
     }

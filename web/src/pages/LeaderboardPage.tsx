@@ -106,8 +106,8 @@ export function LeaderboardPage({
     setTieGroup(rows.filter((t) => !t.eliminated && t.total === row.total));
   };
 
-  const header = (key: SortKey, label: string, hint?: string) => (
-    <th className={`sortable ${sort === key ? 'sorted' : ''}`} onClick={() => setSort(key)} title={hint}>
+  const header = (key: SortKey, label: string, hint?: string, extra = '') => (
+    <th className={`sortable ${sort === key ? 'sorted' : ''} ${extra}`.trim()} onClick={() => setSort(key)} title={hint}>
       {label}{sort === key ? ' ▾' : ''}
     </th>
   );
@@ -173,19 +173,19 @@ export function LeaderboardPage({
         <div className="loading">Loading leaderboard…</div>
       ) : (
         <div className="table-wrap">
-          <table className="lb">
+          <table className="lb leaderboard-table">
             <thead>
               <tr>
                 <th className="col-star"></th>
                 <th className="col-pos">Pos</th>
                 <th className="col-mv" title="Movement since last round">Δ</th>
                 <th className="col-team">Team</th>
-                {header('r1', ROUND_LABELS[1])}
-                {header('r2', ROUND_LABELS[2])}
-                {header('r3', ROUND_LABELS[3])}
-                {header('r4', ROUND_LABELS[4])}
+                {header('r1', ROUND_LABELS[1], undefined, 'col-rd')}
+                {header('r2', ROUND_LABELS[2], undefined, 'col-rd')}
+                {header('r3', ROUND_LABELS[3], undefined, 'col-rd')}
+                {header('r4', ROUND_LABELS[4], undefined, 'col-rd')}
                 {header('total', 'Total')}
-                {header('prize', '$')}
+                {header('prize', '$', undefined, 'col-prize')}
                 {header('cut', 'Cut', 'Golfers through the cut')}
               </tr>
             </thead>
@@ -212,10 +212,10 @@ export function LeaderboardPage({
                       </div>
                       {t.displayName !== t.owner && <div className="team-owner">{t.owner}</div>}
                     </td>
-                    <td><FlashScore value={t.roundDailies[0]} /></td>
-                    <td><FlashScore value={t.roundDailies[1]} /></td>
-                    <td><FlashScore value={t.roundDailies[2]} /></td>
-                    <td><FlashScore value={t.roundDailies[3]} /></td>
+                    <td className="col-rd"><FlashScore value={t.roundDailies[0]} /></td>
+                    <td className="col-rd"><FlashScore value={t.roundDailies[1]} /></td>
+                    <td className="col-rd"><FlashScore value={t.roundDailies[2]} /></td>
+                    <td className="col-rd"><FlashScore value={t.roundDailies[3]} /></td>
                     <td className="col-total"><FlashScore value={t.total} strong /></td>
                     <td className="col-prize">{t.projectedPrize ? fmtMoney(t.projectedPrize) : ''}</td>
                     <td>

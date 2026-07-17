@@ -1,10 +1,12 @@
-// Name normalization + matching between the Excel golfer list and ESPN's feed.
+// Name normalization + matching between the pool golfer list and ESPN's feed.
 
 // Letters NFD does not decompose into base + diacritic (so we transliterate them).
-const SPECIAL = { ø: 'o', æ: 'ae', œ: 'oe', ð: 'd', þ: 'th', ł: 'l', ß: 'ss', đ: 'd', ħ: 'h', ı: 'i' };
+const SPECIAL: Record<string, string> = {
+  ø: 'o', æ: 'ae', œ: 'oe', ð: 'd', þ: 'th', ł: 'l', ß: 'ss', đ: 'd', ħ: 'h', ı: 'i',
+};
 
 /** Accent-fold + lowercase + strip non-alphanumerics. "Ludvig Åberg" -> "ludvigaberg". */
-export function fold(name) {
+export function fold(name: string | null | undefined): string {
   if (name == null) return '';
   return String(name)
     .toLowerCase()
@@ -15,7 +17,7 @@ export function fold(name) {
 }
 
 /** URL/id-safe slug. "J.J. Spaun" -> "jj-spaun". */
-export function slug(name) {
+export function slug(name: string | null | undefined): string {
   if (name == null) return '';
   return String(name)
     .normalize('NFD')
@@ -27,7 +29,7 @@ export function slug(name) {
 
 // ESPN uses slightly different names than the pool sheet for a handful of players.
 // Maps folded pool name -> folded ESPN name so live sync can find them.
-export const NAME_ALIASES = {
+export const NAME_ALIASES: Record<string, string> = {
   jordanlsmith: 'jordansmith',
   matthewmccarty: 'mattmccarty',
   johnkeefer: 'johnnykeefer',
@@ -40,6 +42,6 @@ export const NAME_ALIASES = {
 };
 
 /** Resolve a pool golfer's folded name to the key we should look up in an ESPN index. */
-export function aliasFor(foldedPoolName) {
+export function aliasFor(foldedPoolName: string): string {
   return NAME_ALIASES[foldedPoolName] || foldedPoolName;
 }
