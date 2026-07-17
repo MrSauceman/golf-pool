@@ -302,15 +302,20 @@ html { color-scheme: light dark; }
 :root[data-theme="dark"] .empty, :root[data-theme="dark"] .loading { color: var(--dim); }
 :root[data-theme="dark"] table.rd td.dropped { color: #6c7889; }
 :root[data-theme="dark"] table.rd tbody tr.row-cut,
-:root[data-theme="dark"] table.roster tbody tr.row-cut { color: var(--dim); background: #1d2735; }
+:root[data-theme="dark"] table.roster tbody tr.row-cut,
+:root[data-theme="dark"] .golfers-table tbody tr.row-cut { color: var(--dim); background: #1d2735; }
 :root[data-theme="dark"] table.rd tbody tr:hover,
-:root[data-theme="dark"] table.roster tbody tr:hover { background: #1e2937; }
+:root[data-theme="dark"] table.roster tbody tr:hover,
+:root[data-theme="dark"] .golfers-table tbody tr:hover { background: #1e2937; }
 :root[data-theme="dark"] table.rd tbody tr.row-cut:hover,
-:root[data-theme="dark"] table.roster tbody tr.row-cut:hover { background: #24303a; }
+:root[data-theme="dark"] table.roster tbody tr.row-cut:hover,
+:root[data-theme="dark"] .golfers-table tbody tr.row-cut:hover { background: #24303a; }
 table.rd tbody tr:hover { background: #f5f9ff; }
 table.roster tbody tr:hover { background: #f5f9ff; }
+.golfers-table tbody tr:hover { background: #f5f9ff; }
 table.rd tbody tr.row-cut:hover { background: #efefef; }
 table.roster tbody tr.row-cut:hover { background: #efefef; }
+.golfers-table tbody tr.row-cut:hover { background: #efefef; }
 
 /* ---------- header icons + sync health ---------- */
 .icon-btn { background: rgba(255,255,255,.1); border: 0; color: #fff; width: 34px; height: 34px; border-radius: 8px; cursor: pointer; font-size: 15px; }
