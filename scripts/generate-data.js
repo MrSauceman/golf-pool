@@ -12,13 +12,14 @@ const XLSX = XLSXpkg.default || XLSXpkg;
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { TOURNAMENT } from '../web/src/lib/tournament.config.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 
-// Royal Birkdale 2026: par 70, front nine par 34, back nine par 36 (validated vs. ESPN).
-const PAR_FRONT = 34;
-const PAR_BACK = 36;
+// Course par split comes from the shared tournament config (validated vs. ESPN).
+const PAR_FRONT = TOURNAMENT.parFront;
+const PAR_BACK = TOURNAMENT.parBack;
 const DATA_SHEETS = new Set(['Golfer Data', 'Leaderboard', 'Golfer Frequency']);
 
 const SPECIAL = { ø: 'o', æ: 'ae', œ: 'oe', ð: 'd', þ: 'th', ł: 'l', ß: 'ss', đ: 'd', ħ: 'h', ı: 'i' };
@@ -189,19 +190,19 @@ function importWorkbook(path) {
 
   const state = {
     meta: {
-      event: 'The Open Championship 2026',
-      course: 'Royal Birkdale',
+      event: TOURNAMENT.event,
+      course: TOURNAMENT.course,
       parFront: PAR_FRONT,
       parBack: PAR_BACK,
       par: PAR_FRONT + PAR_BACK,
-      salaryCap: 50,
+      salaryCap: TOURNAMENT.salaryCap,
       entries: teams.length,
       owners: new Set(teams.map((t) => t.owner)).size,
-      pot: prizeInfo.pot || teams.length * 20,
-      entryFee: 20,
+      pot: prizeInfo.pot || teams.length * TOURNAMENT.entryFee,
+      entryFee: TOURNAMENT.entryFee,
       currentRound: 1,
       cutApplied: false,
-      lockedRounds: [1], // Round 1 comes from the sheet; live sync must not overwrite it
+      lockedRounds: TOURNAMENT.lockedRounds, // sheet rounds; live sync must not overwrite
       importedAt: new Date().toISOString(),
       lastSync: null,
     },

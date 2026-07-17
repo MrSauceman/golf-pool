@@ -119,6 +119,21 @@ web/
 .github/workflows/deploy.yml              GitHub Pages CI
 ```
 
+## Reusing for the next tournament
+
+Same spreadsheet format → mostly drop-in. For a new event:
+
+1. Replace the `.xlsx` (same layout) and run `npm run generate-data`.
+2. Edit **[web/src/lib/tournament.config.js](web/src/lib/tournament.config.js)** — one file for the
+   event name, course, **par split** (front/back nine — must match the course or live scores are
+   wrong), salary cap, entry fee, which rounds are pre-loaded from the sheet, and how to find the
+   event in ESPN's feed.
+3. After the first live sync, check the header's "unmatched" count and add any sheet↔ESPN name
+   fixes to `NAME_ALIASES` in [web/src/lib/names.ts](web/src/lib/names.ts).
+4. Update payment/contact details on [web/src/pages/InfoPage.tsx](web/src/pages/InfoPage.tsx).
+
+Then commit and push — the site redeploys automatically.
+
 ## Notes
 
 - **Responsive:** one codebase for phone, tablet, and desktop. On phones the leaderboard trims to

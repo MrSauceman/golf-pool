@@ -4,6 +4,7 @@
 // ESPN's site.api.espn.com sends `Access-Control-Allow-Origin: *`, so the fetch
 // works directly from a static site with no proxy.
 import { fold, aliasFor } from './names';
+import { TOURNAMENT } from './tournament.config.js';
 import type { PoolState } from './scoring';
 
 const LEADERBOARD_URL = 'https://site.api.espn.com/apis/site/v2/sports/golf/leaderboard';
@@ -29,14 +30,15 @@ function toParNum(displayValue: unknown): number | null {
   return Number.isFinite(n) ? n : null;
 }
 
-export async function fetchOpenCompetition(): Promise<{ event: any; competition: any } | null> {
+export async function fetchCompetition(): Promise<{ event: any; competition: any } | null> {
   const res = await fetch(LEADERBOARD_URL, { headers: { accept: 'application/json' } });
   if (!res.ok) throw new Error(`ESPN request failed: ${res.status}`);
   const data = await res.json();
   const events = data.events || [];
+  const { exactName, include, exclude } = TOURNAMENT.espn;
   const ev =
-    events.find((e: any) => e.name === 'The Open') ||
-    events.find((e: any) => /\bopen\b/i.test(e.name) && !/puntacana|corales/i.test(e.name));
+    events.find((e: any) => e.name === exactName) ||
+    events.find((e: any) => include.test(e.name) && !exclude.test(e.name));
   if (!ev) return null;
   return { event: ev, competition: (ev.competitions || [])[0] || null };
 }
@@ -49,7 +51,7 @@ export async function syncFromEspn(
   const parBack = opts.parBack ?? state.meta.parBack ?? 36;
   const lockedRounds = new Set(state.meta.lockedRounds || []);
 
-  const found = await fetchOpenCompetition();
+  const found = await fetchCompetition();
   if (!found || !found.competition) return { ok: false, reason: 'event-not-found' };
 
   const comp = found.competition;
