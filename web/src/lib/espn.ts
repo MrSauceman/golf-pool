@@ -57,6 +57,7 @@ export async function syncFromEspn(
   const comp = found.competition;
   const evStatus = found.event.status || {};
   const compStatus = comp.status || {};
+  const currentRound = compStatus.period || evStatus.period || state.meta.currentRound || 1;
 
   const idx = new Map<string, any>();
   for (const c of comp.competitors || []) {
@@ -109,18 +110,35 @@ export async function syncFromEspn(
       const existing = state.golfers[g.id].scores[p];
       if (existing && existing.manual) continue;
 
-      const hasOut = ls.outScore !== null && ls.outScore !== undefined;
-      const hasIn = ls.inScore !== null && ls.inScore !== undefined;
-      if (!hasOut && !hasIn) continue;
+      // ESPN's outScore/inScore are the strokes played SO FAR on each nine, so
+      // they only equal a real 9-hole total once that nine is complete. Mid-nine
+      // we must NOT subtract a full nine's par (that yields wild negatives like
+      // an 8-stroke, 2-hole "back nine" reading as -28). Gate on holes completed.
+      let frontDone = true;
+      let backDone = true;
+      const gState = (st.type && st.type.state) || '';
+      if (p >= currentRound && gState !== 'post') {
+        const thru = typeof st.thru === 'number' ? st.thru : 0;
+        const startHole = typeof st.startHole === 'number' ? st.startHole : 1;
+        const outHoles = startHole >= 10 ? Math.max(0, thru - 9) : Math.min(thru, 9);
+        const inHoles = startHole >= 10 ? Math.min(thru, 9) : Math.max(0, thru - 9);
+        frontDone = outHoles >= 9;
+        backDone = inHoles >= 9;
+      }
 
-      const f9 = hasOut ? ls.outScore - parFront : existing ? existing.f9 : null;
-      const b9 = hasIn ? ls.inScore - parBack : existing ? existing.b9 : null;
+      const hasOut = ls.outScore !== null && ls.outScore !== undefined && frontDone;
+      const hasIn = ls.inScore !== null && ls.inScore !== undefined && backDone;
+
+      const prevF9 = existing ? existing.f9 : null;
+      const prevB9 = existing ? existing.b9 : null;
+      const f9 = hasOut ? ls.outScore - parFront : prevF9;
+      const b9 = hasIn ? ls.inScore - parBack : prevB9;
+      if (f9 === null && b9 === null) continue;
       state.golfers[g.id].scores[p] = { f9, b9, source: 'espn', manual: false };
       updated++;
     }
   }
 
-  const currentRound = compStatus.period || evStatus.period || state.meta.currentRound || 1;
   const eventState = (evStatus.type && evStatus.type.state) || null; // pre | in | post
   state.meta.currentRound = currentRound;
   state.meta.eventState = eventState;
